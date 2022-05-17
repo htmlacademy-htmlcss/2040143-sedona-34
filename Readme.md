@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Анна Смольянинова](https://up.htmlacademy.ru/htmlcss/34/user/2040143).
-* Наставник: `Неизвестно`.
+* Наставник: `Саша Сударев`(https://up.htmlacademy.ru/profession/frontender/14/htmlcss/34/tutors).
 
 ---
 
