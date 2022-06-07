@@ -18,7 +18,6 @@ body {
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 21px;
-    background-color: #ffffff;
     color:#000000;
   }
 
@@ -26,21 +25,7 @@ body {
     font-weight: 700;
     font-size: 20px;
     line-height: 21px;
-    color: #000000;
-    background-color: #ffffff;
     text-decoration: none;
-}
-
-.catalog-page-header {
-    color: #000000;
-    background-color: #ffffff;
-}
-
-.page-header .button {
-    font-size: 16px;
-    line-height: 20px;
-    color: #000000;
-    text-transform: uppercase;
 }
 
 .main-navigation a {
@@ -51,28 +36,14 @@ body {
     line-height: 26px;
 }
 
-.main-index {
-    color: #000000;
-    background-color: #ffffff;
-}
-
-.catalog-housing {
-    color: #000000;
-    background-color: #ffffff;
-}
-
-
 .welcome {
-    background-image: url("../images/background/sedona-view-main.jpg");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
+    background-image: url("../images/background/sedona-view-main.jpg") no-repeat 100% auto;
 }
 
 .about-sedona {
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
-    color: #000000;
     text-transform: uppercase;
     text-align: center;
 }
@@ -81,7 +52,6 @@ body {
     font-weight: 400;
     font-size: 22px;
     line-height: 26px;
-    color: #333333;
     text-align: center;
 }
 
@@ -89,15 +59,13 @@ body {
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
-    color: #333333;
     text-align: center;
 }
 
-.advantages h4 {
+.advantages .advantage-title {
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
-    color: #000000;
     text-transform: uppercase;
     text-align: center;
 }
@@ -133,7 +101,7 @@ body {
     border-radius: 4px;
   }
 
-  li .button-brown {
+  .user-navigation-item-3 .button-brown {
     color: #ffffff;
   }
 
@@ -146,7 +114,6 @@ body {
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
-    color: #000000;
     text-transform: uppercase;
   }
 
@@ -161,7 +128,7 @@ body {
     text-align: center;
     background-image: url("../images/background/sedona-subscribe.jpg");
     background-size: 100% auto;
-    background-repeat: none;
+    background-repeat: none; 
     background-color: #000000;
     color: #ffffff;
   }
@@ -182,11 +149,6 @@ body {
     font-weight: 400;
     color: #ffffff;
   }
-
-  .footer-sedona {
-    background-color: #ffffff;
-    color: #000000;
-  }
   
   .phone-footer a {
     text-decoration: none;
@@ -204,8 +166,6 @@ body {
       background-image: url("../images/background/sedona-catalog-hotels.jpg");
       background-repeat: no-repeat;
       background-size: 100% auto;
-      background-color: #ffffff;
-      color: #000000;
   }
 
   .catalog-housing-requirements h1 {
@@ -245,14 +205,6 @@ body {
     font-weight: 400;
   }
 
-  .housing-appropriate-list {
-    color: #333333;
-  }
-  
-  .housing-appropriate-list-name {
-    color: #000000;
-  }
-
   .cheap {
     font-size: 18px;
     line-height: 21px;
@@ -290,11 +242,19 @@ body {
     text-transform: uppercase;
   }
   
-  .pagination {
+  .pagination-link {
     font-size: 20px;
     line-height: 36px;
     font-weight: 700;
     text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  .pagination-current {
+    color:#000000;
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 700;
   }
 
   
@@ -320,7 +280,6 @@ body {
     font-size: 22px;
     line-height: 26px;
     font-weight: 400;
-    color: #333333;
   }
 
   .button {
