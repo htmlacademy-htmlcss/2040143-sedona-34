@@ -1,294 +1,302 @@
 @font-face {
-    font-family: "PT Sans";
-    font-style: normal;
-    font-weight: 400;
-    src: url("../fonts/ptsans-400.woff2") format("woff2");
-    font-display: swap;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "PT Sans";
-    font-style: normal;
-    font-weight: 700;
-    src: url("../fonts/ptsans-700.woff2") format("woff2");
-    font-display: swap;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
 }
 
 body {
-    font-family: "PT Sans", sans-serif;
-    font-size: 18px;
-    line-height: 21px;
-    color:#000000;
-  }
-
-.page-header {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 21px;
-    text-decoration: none;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #000000;
 }
 
-.main-navigation a {
-    color: inherit;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 26px;
+/*хедер в индексе и каталоге*/
+
+.navigation {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-decoration: none;
 }
+
+.user-navigation-item .want-here {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/*готово*/
+
+/*главная картинка в индексе*/
 
 .welcome {
-    background-image: url("../images/background/sedona-view-main.jpg") no-repeat 100% auto;
+  background: url("/images/background/sedona-view-main.jpg") no-repeat #000000;
+  background-size: 100% auto;
 }
 
+/*готово*/
+
+/*преимущества седоны на главной*/
 .about-sedona {
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 36px;
-    text-transform: uppercase;
-    text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .about-sedona-reasones {
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 26px;
-    text-align: center;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
 }
 
 .advantages {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    text-align: center;
+  font-weight: 400;
+  text-align: center;
 }
 
 .advantages .advantage-title {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 21px;
-    text-transform: uppercase;
-    text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 28px;
 }
 
 .advantage-item .blue {
-    background-color: #82B3D3;
-    color: #ffffff;
+  background-color: #82B3D3;
+  color: #ffffff;
 }
 
+/*готово*/
+
+/*кнопки голубые и коричневые*/
 .button-brown {
-    font-family: inherit;
-    font-size: 16px;
-    line-height: 16px;
-    font-weight: 700;
-    text-align: center;
-    color: #ffffff;
-    background-color: #756157;
-    text-decoration: none;
-    text-transform: uppercase;
-    border-radius: 4px;
-  }
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  background-color: #756157;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
 
-  .button-blue {
-    font-family: inherit;
-    font-size: 16px;
-    line-height: 16px;
-    font-weight: 700;
-    text-align: center;
-    color: #ffffff;
-    background-color: #82B3D3;
-    text-decoration: none;
-    text-transform: uppercase;
-    border-radius: 4px;
-  }
+.button-blue {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #82B3D3;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
 
-  .user-navigation-item-3 .button-brown {
-    color: #ffffff;
-  }
+.searh-hotel .button-brown {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+}
 
-  .searh-hotel {
-    text-align: center;
-  }
-
-
-  .searh-hotel-invite {
-    font-size: 30px;
-    line-height: 36px;
-    font-weight: 700;
-    text-transform: uppercase;
-  }
-
-  .searh-hotel-link {
-    font-size: 22px;
-    line-height: 26px;
-    font-weight: 400;
-    color: #333333;
-  }
-
-  .subscibe-index {
-    text-align: center;
-    background-image: url("../images/background/sedona-subscribe.jpg");
-    background-size: 100% auto;
-    background-repeat: none; 
-    background-color: #000000;
-    color: #ffffff;
-  }
+/*готово*/
 
 
+/*каталог секция "заинтересовались?"*/
+.searh-hotel {
+  text-align: center;
+}
 
-  .subscibe-invite {
-    font-size: 30px;
-    line-height: 36px;
-    font-weight: 700;
-    color: #ffffff;
-    text-transform: uppercase;
-  }
 
-  .subscibe-index p {
-    font-size: 22px;
-    line-height: 26px;
-    font-weight: 400;
-    color: #ffffff;
-  }
-  
-  .phone-footer a {
-    text-decoration: none;
-    color: inherit;
-    font-size: 40px;
-    line-height: 40px;
-  }
+.searh-hotel-invite {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
 
-  .housing-appropriate-list a {
-    text-decoration: none;
-  }
+.searh-hotel-link {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #333333;
+}
 
-  .catalog-housing-requirements {
-      color: #FFFFFF;
-      background-image: url("../images/background/sedona-catalog-hotels.jpg");
-      background-repeat: no-repeat;
-      background-size: 100% auto;
-  }
+/*готово*/
 
-  .catalog-housing-requirements h1 {
-    font-size: 60px;
-    line-height: 78px;
-    font-weight: 700;
-    color: #ffffff;
-  }
+/*подписаться на рассылку*/
+.subscribe {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  text-align: center;
+}
 
-  .breadcrumbs {
-    color: #ffffff;
-  }
+.index-subscribe {
+  background: url("/images/background/sedona-subscribe.jpg") no-repeat #000000;
+  background-size: 100% auto;
+  color: #ffffff;
 
-  .housing-conveniences-filter {
-    font-size: 20px;
-    line-height: 26px;
-    font-weight: 700;
-    color: #ffffff;
-  }
+}
 
-  .housing-type-filter {
-    font-size: 20px;
-    line-height: 26px;
-    font-weight: 700;
-    color: #ffffff;
-  }
+.subscribe-invite {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
 
-  .housing-conveniences-list {
-    font-size: 18px;
-    line-height: 21px;
-    font-weight: 400;
-  }
+.index-subscribe .button-blue {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+}
 
-  .housing-type-list {
-    font-size: 18px;
-    line-height: 21px;
-    font-weight: 400;
-  }
+/*готово*/
 
-  .cheap {
-    font-size: 18px;
-    line-height: 21px;
-    font-weight: 400;
-  }
+/*стили для телефона*/
+.phone-number {
+  text-decoration: none;
+  color: inherit;
+  font-size: 40px;
+  line-height: 40px;
+}
 
-  .suitable {
-    font-size: 18px;
-    line-height: 21px;
-    font-weight: 400;
-  }
+/*готово*/
 
-  .hotels-list h3 {
-    color: #000000;
-    font-size: 24px;
-    line-height: 28px;
-    font-weight: 700;
-  }
+/*убираем подчеркивание с иконок выбора типа показа отелей*/
 
-  .hotels-list span {
-    color: #000000;
-    font-size: 18px;
-    line-height: 21px;
-    font-weight: 400;
-  }
+.botton-icon {
+  text-decoration: none;
+}
 
-  .hotels-list a {
-    text-decoration: none;
-  }
+/*готово*/
 
-  .rating {
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 400;
-    text-transform: uppercase;
-  }
-  
-  .pagination-link {
-    font-size: 20px;
-    line-height: 36px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #ffffff;
-  }
+/*фильтры выбора гостиниц в каталоге*/
 
-  .pagination-current {
-    color:#000000;
-    font-size: 20px;
-    line-height: 36px;
-    font-weight: 700;
-  }
+.housing-appropriate-list-name {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
 
-  
-  .number-of-hotels {
-    font-size: 18px;
-    line-height: 21px;
-    font-weight: 400;
-  }
+.catalog-housing-requirements {
+  background: url("/images/background/sedona-catalog-hotels.jpg") no-repeat #000000;
+  background-size: 100% auto;
+  color: #FFFFFF;
+}
 
-  .subscribe-catalog {
-    text-align: center;
-  }
-  
-  .subscribe-catalog h3 {
-    font-size: 30px;
-    line-height: 36px;
-    font-weight: 700;
-    color: #000000;
-    text-transform: uppercase;
-  }
+.catalog-housing-requirements .catalog-housing-hotels {
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: 700;
+  color: #ffffff;
+}
 
-  .subscribe-catalog p {
-    font-size: 22px;
-    line-height: 26px;
-    font-weight: 400;
-  }
+.breadcrumbs {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 21px;
+}
 
-  .button {
-      color: #ffffff;
-      font-size: 16px;
-    line-height: 20px;
-    font-weight: 400;
-  }
+.housing-filter {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #ffffff;
+}
 
-  .advantage-item-picture-sedona {
-    display: block;
-  }
+/*готово*/
+
+/*список подходящих гостиниц в мейне в каталоге*/
+
+.hotels-list .hotel-head {
+  color: #000000;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.hotels-list .hotel-link {
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.rating {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/*готово*/
+
+
+/*пагинация*/
+
+.pagination-link {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.pagination-current {
+  color: #000000;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+/*готово*/
+
+/* кнопка для сброса параметров в выборе отеля*/
+
+.button-reset {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+/*готово*/
+
+/* ссылки в хедерах*/
+
+.want-here {
+  color: #ffffff;
+}
+
+.navigation-item-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+/*готово*/
+
+/* прост че-то начала из блоков*/
+
+.advantage-item-picture-sedona {
+  display: block;
+}
+
+/*вообще не готово*/
