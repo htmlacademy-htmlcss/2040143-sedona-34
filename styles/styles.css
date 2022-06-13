@@ -376,13 +376,7 @@ html {
   flex-wrap: wrap;
 }
 
-.advantage-item-picture-sedona {
-  width: 800px;
-  height: 384px;
-  margin: 0;
-}
-
-.advantage-item-detail {
+.advantages {
   display: flex;
 }
 
@@ -390,13 +384,23 @@ html {
   display: flex;
 }
 
-.real-town {
+/*чтобы пункты с картинками вставали в ряд*/
+
+/*выстраивает первый пункт и подпункты друг под другом*/
+
+.advantage-item.real-town {
   display: block;
 }
 
-.advantage-item.pictured.real-town {
+.real-town-description {
   display: flex;
 }
+
+.advantage-item-detail {
+  display: flex;
+}
+
+/*выстраивает первый пункт и подпункты друг под другом конец*/
 
 /*преимущество на главной конец*/
 
