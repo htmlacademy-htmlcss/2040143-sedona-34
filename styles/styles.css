@@ -400,6 +400,14 @@ html {
   background-color: #82B3D3;
 }
 
+.advantage-item-pictured.real-town {
+  display: flex;
+}
+
+.advantages-down {
+  display: flex;
+}
+
 /*заинтересовались? поиск гостиницы главная*/
 
 .searh-hotel {
