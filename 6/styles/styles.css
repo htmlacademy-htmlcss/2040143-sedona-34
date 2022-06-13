@@ -28,11 +28,20 @@ body {
 
 /*хедер в индексе и каталоге*/
 
+
+
+.logo-sedona {
+  margin: 0 30px 5px 70px;
+  padding: 0;
+  width: 139px;
+}
+
 .navigation {
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
   text-decoration: none;
+  display: flex;
 }
 
 .user-navigation-item .want-here {
@@ -46,14 +55,14 @@ body {
 /*главная картинка в индексе*/
 
 .welcome {
-  background: url("/images/background/sedona-view-main.jpg") no-repeat #000000;
+  background: url("../images/background/sedona-view-main.jpg") no-repeat #000000;
   background-size: 100% auto;
 }
 
 /*главная картинка в индексе конец*/
 
 /*преимущества седоны на главной*/
-.about-sedona {
+.about-sedona-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -61,7 +70,7 @@ body {
   text-align: center;
 }
 
-.about-sedona-reasones {
+.about-sedona-description {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -71,8 +80,6 @@ body {
 .advantages {
   font-weight: 400;
   text-align: center;
-  margin: 0;
-  padding: 0;
 }
 
 .advantages .advantage-title {
@@ -162,7 +169,7 @@ body {
 }
 
 .index-subscribe {
-  background: url("/images/background/sedona-subscribe.jpg") no-repeat #000000;
+  background: url("../images/background/sedona-subscribe.jpg") no-repeat #000000;
   background-size: 100% auto;
   color: #ffffff;
 
@@ -211,7 +218,7 @@ body {
 }
 
 .catalog-housing-requirements {
-  background: url("/images/background/sedona-catalog-hotels.jpg") no-repeat #000000;
+  background: url("../images/background/sedona-catalog-hotels.jpg") no-repeat #000000;
   background-size: 100% auto;
   color: #FFFFFF;
 }
@@ -239,6 +246,19 @@ body {
 /*фильтры выбора гостиниц в каталоге конец*/
 
 /*список подходящих гостиниц в мейне в каталоге*/
+
+.hotels-list {
+  margin: 0;
+  padding: 0;
+}
+
+.housing-appropriate-list {
+  display: block;
+}
+
+.catalog-subscribe {
+  display: block;
+}
 
 .hotels-list .hotel-head {
   color: #000000;
@@ -303,6 +323,8 @@ html {
 
 .main-container {
   flex-grow: 1;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .container {
@@ -315,16 +337,18 @@ html {
 
 /*липкий футер конец - остальное в body*/
 
-/*навигация*/
+/*хедер блоки*/
 
-.navigation {
+.header-container {
   display: flex;
   width: 1200px;
   margin: 0 auto;
 }
 
+
+
 .navigation-list {
-  margin: 0;
+  margin: 0 237px 0 30px;
   padding: 0;
   width: 490px;
 }
@@ -334,21 +358,9 @@ html {
   width: 364px;
 }
 
-.logo-sedona {
-  width: 139px;
-  margin-right: 30px;
-}
+/*хедер блоки конец*/
 
-/*навигация конец*/
 
-/*сетка  мейны*/
-
-.page-container {
-  width: 1200px;
-  margin: 0 auto;
-}
-
-/*сетка  общее конец*/
 
 /*слоган  главная*/
 
@@ -361,7 +373,7 @@ html {
 
 /*седона заслуживает большего главная*/
 
-.sedona-deserves-more {
+.about-sedona {
   display: block;
   margin: 0 auto;
 }
@@ -382,6 +394,7 @@ html {
   height: 384px;
   margin: 0;
   flex-wrap: wrap;
+  background-color: #83B3D3;
 }
 
 .advantages {
@@ -406,6 +419,8 @@ html {
 
 .advantage-item-detail {
   display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 /*выстраивает первый пункт и подпункты друг под другом конец*/
@@ -444,19 +459,23 @@ html {
 .social-footer {
   width: 142px;
   height: 40px;
-  margin-right: 41px;
+  margin: 49px 52px 54px 72px;
+  padding: 0;
 }
 
 .phone-footer {
   text-align: center;
   width: 720px;
   height: 50px;
+  margin: 40px 53px 30px 0;
+  padding: 5px 194px 5px 195px;
 }
 
-.html-academy-logo-footer {
+.htmlacademy-logo-footer {
   width: 115px;
   height: 34px;
-  margin-left: 41px;
+  margin: 43px 72px 43px auto;
+  padding: 0;
 }
 
 /*футер конец*/
