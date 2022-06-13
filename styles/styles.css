@@ -62,7 +62,7 @@ body {
 /*главная картинка в индексе конец*/
 
 /*преимущества седоны на главной*/
-.about-sedona {
+.about-sedona-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -70,7 +70,7 @@ body {
   text-align: center;
 }
 
-.about-sedona-reasones {
+.about-sedona-description {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -247,6 +247,19 @@ body {
 
 /*список подходящих гостиниц в мейне в каталоге*/
 
+.hotels-list {
+  margin: 0;
+  padding: 0;
+}
+
+.housing-appropriate-list {
+  display: block;
+}
+
+.catalog-subscribe {
+  display: block;
+}
+
 .hotels-list .hotel-head {
   color: #000000;
   font-size: 24px;
@@ -360,7 +373,7 @@ html {
 
 /*седона заслуживает большего главная*/
 
-.sedona-deserves-more {
+.about-sedona {
   display: block;
   margin: 0 auto;
 }
