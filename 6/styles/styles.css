@@ -305,6 +305,14 @@ html {
   flex-grow: 1;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
 /*липкий футер конец - остальное в body*/
 
 /*навигация*/
