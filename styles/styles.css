@@ -20,20 +20,23 @@ body {
   line-height: 21px;
   font-weight: 400;
   color: #000000;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
+  margin: 0 auto;
   min-height: 100%;
 }
 
 /*хедер в индексе и каталоге*/
 
-
-
 .logo-sedona {
   margin: 0 30px 5px 70px;
   padding: 0;
   width: 139px;
+  height: 70px;
+}
+
+.header-container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .navigation {
@@ -42,13 +45,47 @@ body {
   line-height: 26px;
   text-decoration: none;
   display: flex;
+  margin: 0 auto;
+  height: 65px;
 }
 
-.user-navigation-item .want-here {
+.navigation-list {
+  display: flex;
+  margin: 0 237px 0 0;
+  padding: 20px 45px 0 0;
+  width: 390px;
+  list-style-type: none;
+  justify-content: space-around;
+
+}
+
+.user-navigation {
+  display: flex;
+  margin: 0 70px 0 auto;
+  width: 364px;
+  padding: 20px 17px;
+  list-style-type: none;
+  margin: 0;
+}
+
+.user-navigation-item.select-hotel {
   color: #ffffff;
   font-size: 16px;
   line-height: 20px;
 }
+
+/* ссылки в хедерах*/
+
+.select-hotel {
+  color: #ffffff;
+}
+
+.navigation-item-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+/*ссылки в хедерах конец*/
 
 /*конец хедер в индексе и каталоге*/
 
@@ -57,6 +94,7 @@ body {
 .welcome {
   background: url("../images/background/sedona-view-main.jpg") no-repeat #000000;
   background-size: 100% auto;
+  height: 485px;
 }
 
 /*главная картинка в индексе конец*/
@@ -94,6 +132,14 @@ body {
   color: #ffffff;
 }
 
+.advantage-list {
+  list-style-type: none;
+}
+
+.advantage-item-detail {
+  list-style-type: none;
+}
+
 /*конец преимущества седоны на главной*/
 
 /*кнопки*/
@@ -122,7 +168,7 @@ body {
   border-radius: 4px;
 }
 
-.searh-hotel .button-brown {
+.searсh-hotel .button-brown {
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
@@ -139,19 +185,22 @@ body {
 
 
 /*каталог секция "заинтересовались?"*/
-.searh-hotel {
+.searсh-hotel {
   text-align: center;
+  display: block;
+  height: 417px;
+  margin: 0 auto;
+  padding-top: 40px;
 }
 
-
-.searh-hotel-invite {
+.searсh-hotel-head {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-.searh-hotel-link {
+.searсh-hotel-link {
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
@@ -162,20 +211,28 @@ body {
 
 /*подписаться на рассылку*/
 .subscribe {
+  display: block;
+  margin: 0 auto;
+  height: 411px;
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
   text-align: center;
+  padding-top: 40px;
+
 }
 
 .index-subscribe {
   background: url("../images/background/sedona-subscribe.jpg") no-repeat #000000;
   background-size: 100% auto;
   color: #ffffff;
-
 }
 
-.subscribe-invite {
+.catalog-subscribe {
+  display: block;
+}
+
+.subscribe-title {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -215,12 +272,16 @@ body {
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
+  width: 0 auto;
+  height: 393px;
 }
 
 .catalog-housing-requirements {
   background: url("../images/background/sedona-catalog-hotels.jpg") no-repeat #000000;
   background-size: 100% auto;
   color: #FFFFFF;
+  padding: 35px 70px 70px 70px;
+  margin: 0 auto;
 }
 
 .catalog-housing-requirements .catalog-housing-hotels {
@@ -250,14 +311,21 @@ body {
 .hotels-list {
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
 }
 
 .housing-appropriate-list {
   display: block;
+  margin: 0 auto;
 }
 
-.catalog-subscribe {
-  display: block;
+.housing-appropriate-list-filters {
+  display: flex;
+  margin: 50px 71px 56px 72px;
+  width: 1059px;
+  height: 49px;
 }
 
 .hotels-list .hotel-head {
@@ -302,29 +370,12 @@ body {
 
 /*пагинация конец*/
 
-/* ссылки в хедерах*/
 
-.want-here {
-  color: #ffffff;
-}
-
-.navigation-item-link {
-  color: #000000;
-  text-decoration: none;
-}
-
-/*ссылки в хедерах конец*/
 
 /*липкий футер*/
 
 html {
   height: 100%;
-}
-
-.main-container {
-  flex-grow: 1;
-  width: 1200px;
-  margin: 0 auto;
 }
 
 .container {
@@ -336,29 +387,6 @@ html {
 }
 
 /*липкий футер конец - остальное в body*/
-
-/*хедер блоки*/
-
-.header-container {
-  display: flex;
-  width: 1200px;
-  margin: 0 auto;
-}
-
-
-
-.navigation-list {
-  margin: 0 237px 0 30px;
-  padding: 0;
-  width: 490px;
-}
-
-.user-navigation {
-  margin-left: auto;
-  width: 364px;
-}
-
-/*хедер блоки конец*/
 
 
 
@@ -376,6 +404,8 @@ html {
 .about-sedona {
   display: block;
   margin: 0 auto;
+  height: 282px;
+  padding: 63px 290px;
 }
 
 /*седона заслуживает большего главная конец*/
@@ -387,6 +417,7 @@ html {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  height: 1535px;
 }
 
 .advantage-item-text {
@@ -439,28 +470,29 @@ html {
   display: flex;
 }
 
-/*заинтересовались? поиск гостиницы главная*/
-
-.searh-hotel {
-  margin: 0;
-  padding: 0;
-}
-
-/*заинтересовались? поиск гостиницы главная конец*/
-
 /*футер*/
 
 .footer-container {
   display: flex;
   width: 1200px;
   margin: 0 auto;
+  height: 120px;
+}
+
+.social {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
 }
 
 .social-footer {
   width: 142px;
   height: 40px;
-  margin: 49px 52px 54px 72px;
-  padding: 0;
+  margin: 45px 42px 35px 70px;
+}
+
+.social-item {
+  margin: 0 10px;
 }
 
 .phone-footer {
@@ -510,3 +542,11 @@ html {
 }
 
 /*мейн в каталоге конец*/
+
+/*пагинация*/
+
+.pagination {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
