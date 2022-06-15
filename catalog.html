@@ -62,38 +62,41 @@
               <a class="breadcrumbs-link">Гостиницы</a>
             </li>
           </ul>
-          <h2 class="visually-hidden" hidden>Фильтры выбора жилья</h2>
-          <form action="#" method="post" class="housing-search-filters">
-            <fieldset class="housing-filter conveniences">
-              <legend class="housing-conveniences-filter-title">Инфраструктура</legend>
-              <ul class="housing-list conveniences">
-                <li class="housing-item conveniences">
-                  <label><input type="checkbox" name="pool" checked>Бассейн</label>
-                </li>
-                <li class="housing-item conveniences">
-                  <label><input type="checkbox" name="parking" checked>Парковка</label>
-                </li>
-                <li class="housing-item conveniences">
-                  <label><input type="checkbox" name="Wi-Fi">Wi-Fi</label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="housing-filter type">
-              <legend class="housing-type-filter-title">Тип Жилья</legend>
-              <ul class="housing-list type">
-                <li class="housing-item type"><label><input type="radio" name="housing-type-item" value="hotel"
-                      checked>Гостиница</label></li>
-                <li class="housing-item type"><label><input type="radio" name="housing-type-item"
-                      value="motel">Мотель</label></li>
-                <li class="housing-item type"><label><input type="radio" name="housing-type-item"
-                      value="appartments">Апартаменты</label></li>
-              </ul>
-            </fieldset>
-            <div class="apply-and-reset">
-              <button type="submit" class="button-blue">Применить</button>
-              <button type="reset" class="button-reset">Сбросить</button>
-            </div>
-          </form>
+          <div class="housing-select">
+            <h2 class="visually-hidden" hidden>Фильтры выбора жилья</h2>
+            <form action="#" method="post" class="housing-search-filters">
+              <fieldset class="housing-filter conveniences">
+                <legend class="housing-filter-title conveniences">Инфраструктура</legend>
+                <ul class="housing-list conveniences">
+                  <li class="housing-item conveniences">
+                    <label><input type="checkbox" name="pool" checked>Бассейн</label>
+                  </li>
+                  <li class="housing-item conveniences">
+                    <label><input type="checkbox" name="parking" checked>Парковка</label>
+                  </li>
+                  <li class="housing-item conveniences">
+                    <label><input type="checkbox" name="Wi-Fi">Wi-Fi</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="housing-filter type">
+                <legend class="housing-filter-title type">Тип Жилья</legend>
+                <ul class="housing-list type">
+                  <li class="housing-item type"><label><input type="radio" name="housing-type-item" value="hotel"
+                        checked>Гостиница</label></li>
+                  <li class="housing-item type"><label><input type="radio" name="housing-type-item"
+                        value="motel">Мотель</label></li>
+                  <li class="housing-item type"><label><input type="radio" name="housing-type-item"
+                        value="appartments">Апартаменты</label></li>
+                </ul>
+              </fieldset>
+
+              <div class="apply-and-reset">
+                <button type="submit" class="button-blue">Применить</button>
+                <button type="reset" class="button-reset">Сбросить</button>
+              </div>
+            </form>
+          </div>
         </section>
         <section class="housing-appropriate-list">
           <div class="housing-appropriate-list-filters">
@@ -116,7 +119,7 @@
             </a>
           </div>
           <ul class="hotels-list">
-            <li>
+            <li class="hotel-item">
               <a href="#" class="hotel-link amara-resort-&-spa">
                 <img src="images/hotels/hotels-amara-resort-&-spa.jpg" class="hotel-card"
                   alt="Гостиница Amara Resort & Spa">
@@ -129,7 +132,7 @@
               <button class="add-to-liked button-blue" type="submit">В избранное</button>
               <span class="rating">Рейтинг: 8,5</span>
             </li>
-            <li>
+            <li class="hotel-item">
               <a href="#" class="hotel-link villas-at-poco-diablo">
                 <img src="images/hotels/hotels-villas-at-poco-diablo.jpg" class="hotel-card"
                   alt="Гостиница Villas at Poco Diablo">
@@ -142,7 +145,7 @@
               <button class="add-to-liked button-blue" type="submit">В избранное</button>
               <span class="rating">Рейтинг: 9,2</span>
             </li>
-            <li>
+            <li class="hotel-item">
               <a href="#" class="hotel-link desert-quail-inn">
                 <img src="images/hotels/hotels-desert-quail-inn.jpg" class="hotel-card"
                   alt="Гостиница Desert Quail Inn">
@@ -154,7 +157,7 @@
               <button class="add-to-liked button-blue" type="submit">В избранное</button>
               <span class="rating">Рейтинг: 6,9</span>
             </li>
-            <li>
+            <li class="hotel-item">
               <a href="#" class="hotel-link greentree-inn">
                 <img src="images/hotels/hotels-greentree-inn.jpg" class="hotel-card" alt="Гостиница GreenTree Inn">
                 <h3 class="hotel-head greentree-inn">GreenTree Inn</h3>

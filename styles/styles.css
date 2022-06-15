@@ -148,13 +148,17 @@ body {
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
-  text-align: center;
   color: #ffffff;
   background-color: #756157;
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 4px;
+  text-align: center;
+  width: 140px;
+  height: 37px;
 }
+
+
 
 .button-blue {
   font-family: inherit;
@@ -166,9 +170,12 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 4px;
+  text-align: center;
+  width: 140px;
+  height: 37px;
 }
 
-.searсh-hotel .button-brown {
+.searсh-hotel.button-brown {
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
@@ -219,7 +226,6 @@ body {
   font-weight: 400;
   text-align: center;
   padding-top: 40px;
-
 }
 
 .index-subscribe {
@@ -282,26 +288,62 @@ body {
   color: #FFFFFF;
   padding: 35px 70px 70px 70px;
   margin: 0 auto;
+
+}
+
+.breadcrumbs {
+  display: flex;
 }
 
 .catalog-housing-requirements .catalog-housing-hotels {
+  display: block;
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
   color: #ffffff;
+  margin: 0;
+  width: 495px;
+  height: 78px;
+  list-style-type: none;
 }
 
 .breadcrumbs {
   color: #ffffff;
   font-size: 16px;
   line-height: 21px;
+  list-style-type: none;
+  margin: 0;
 }
 
-.housing-filter {
+.breadcrumbs-item {
+  margin: 0;
+}
+
+.housing-select {
+  display: flex;
+}
+
+.housing-filter-title {
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
+}
+
+.housing-filter {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 400;
   color: #ffffff;
+  display: flex;
+  height: 149px;
+}
+
+.housing-filter.conveniences {
+  width: 150px;
+}
+
+.housing-filter.type {
+  width: 145px;
 }
 
 /*фильтры выбора гостиниц в каталоге конец*/
@@ -309,16 +351,35 @@ body {
 /*список подходящих гостиниц в мейне в каталоге*/
 
 .hotels-list {
-  margin: 0;
+  margin: 56px 72px 66px 72px;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
+  justify-content: space-between;
+  width: 1056px;
+  height: 876px;
+
 }
 
 .housing-appropriate-list {
   display: block;
   margin: 0 auto;
+  padding: 0;
+}
+
+.hotel-item {
+  display: flex;
+  width: 340px;
+  height: 438px;
+  padding: 20px;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.hotel-card {
+  width: 300px;
+  height: 210px;
 }
 
 .housing-appropriate-list-filters {
@@ -339,6 +400,15 @@ body {
   text-decoration: none;
   font-size: 24px;
   line-height: 28px;
+  margin: 0;
+}
+
+.hotel-link-about {
+  margin: 0;
+}
+
+.add-to-liked {
+  margin: 0;
 }
 
 .rating {
@@ -534,11 +604,6 @@ html {
   width: 146px;
   height: 149px;
   margin-right: 176px;
-}
-
-
-.apply-and-reset {
-  display: block;
 }
 
 /*мейн в каталоге конец*/
