@@ -95,7 +95,6 @@ body {
   margin: 0 0 0 20px;
 }
 
-
 /*ссылки в хедерах конец*/
 
 /*конец хедер на главной и в каталоге*/
@@ -318,8 +317,6 @@ slogan-image.sedona-grand-sucks {
   width: 100%;
 }
 
-
-
 .searсh-hotel-head {
   font-size: 30px;
   line-height: 36px;
@@ -346,7 +343,6 @@ slogan-image.sedona-grand-sucks {
   box-sizing: border-box;
   margin: 0;
 }
-
 
 /*каталог секция "заинтересовались?" конец*/
 
@@ -552,8 +548,6 @@ slogan-image.sedona-grand-sucks {
   padding: 0;
 }
 
-
-
 /*хлебные крошки*/
 .breadcrumbs {
   display: flex;
@@ -641,7 +635,6 @@ slogan-image.sedona-grand-sucks {
 }
 
 /*список подходящих гостиниц в мейне в каталоге конец*/
-
 
 
 /*пагинация и количество гостиниц на странице*/
@@ -780,10 +773,6 @@ html {
 .housing-search-filters {
   display: flex;
 }
-
-
-
-
 
 /*мейн в каталоге конец*/
 
