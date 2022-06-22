@@ -134,8 +134,7 @@ slogan-image.sedona-grand-sucks {
 .about-sedona {
   display: block;
   margin: 0 auto;
-  height: 282px;
-  padding: 63px 290px;
+  padding: 63px 273px;
 }
 
 .about-sedona-title {
@@ -144,6 +143,7 @@ slogan-image.sedona-grand-sucks {
   line-height: 36px;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 63px 0 31px 0;
 }
 
 .about-sedona-description {
@@ -151,6 +151,8 @@ slogan-image.sedona-grand-sucks {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+  margin: 0 0 27px 0;
+  width: 655px;
 }
 
 /*седона заслуживает большего главная конец*/
@@ -191,7 +193,6 @@ slogan-image.sedona-grand-sucks {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  height: 1535px;
   list-style-type: none;
 }
 
@@ -312,9 +313,8 @@ slogan-image.sedona-grand-sucks {
 .searсh-hotel {
   text-align: center;
   display: block;
-  height: 417px;
-  padding-top: 40px;
-  width: 100%;
+  padding: 91px 304px 93px;
+  width: 100% auto;
 }
 
 .searсh-hotel-head {
@@ -322,7 +322,8 @@ slogan-image.sedona-grand-sucks {
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 91px 0 29px 0;
+  margin: 0 0 29px 0;
+  padding: 0;
 }
 
 .searсh-hotel-offer {
@@ -331,17 +332,20 @@ slogan-image.sedona-grand-sucks {
   font-weight: 400;
   color: #333333;
   margin: 0 0 56px 0;
+  width: 592px;
+  padding: 0;
 }
 
-.searсh-hotel-link {
+.searсh-hotel-link.button-brown {
   font-size: 20px;
   line-height: 36px;
-  width: 1544px;
-  height: 1136px;
+  width: 574px;
+  height: 60px;
   padding: 12px 15px;
   text-align: center;
   box-sizing: border-box;
   margin: 0;
+  display: block;
 }
 
 /*каталог секция "заинтересовались?" конец*/
@@ -440,6 +444,10 @@ slogan-image.sedona-grand-sucks {
   margin: 50px auto;
   padding: 0;
   align-items: center;
+}
+
+.housing-search-filters {
+  display: flex;
 }
 
 .housing-appropriate-list-name {
@@ -728,23 +736,22 @@ html {
   display: flex;
   width: 1200px;
   margin: 0 auto;
-  height: 120px;
+  padding: 40px 30px 70px;
   align-items: center;
 }
 
 .social-footer {
   width: 142px;
-  margin: 45px 42px 35px 70px;
+  margin: 5px 41px 5px 0;
   display: flex;
   flex-wrap: wrap;
-
 }
 
 .social {
   list-style-type: none;
   display: flex;
-  align-items: center;
   padding: 0;
+  margin: 0;
 }
 
 .social-item {
@@ -755,26 +762,18 @@ html {
 .phone-footer {
   text-align: center;
   width: 710px;
-  height: 50px;
-  margin: 45px 41px 35px 41px;
+  margin: 0 auto;
+  padding: 5px 0 5px 0;
 }
 
 .htmlacademy-logo-footer {
   width: 115px;
   height: 34px;
-  margin: 49px 72px 38px auto;
+  margin: 8px 0 8px auto;
   padding: 0;
 }
 
 /*футер конец*/
-
-/*мейн в каталоге*/
-
-.housing-search-filters {
-  display: flex;
-}
-
-/*мейн в каталоге конец*/
 
 /*пагинация*/
 
