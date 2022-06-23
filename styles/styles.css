@@ -29,10 +29,11 @@ body {
 .header-container {
   display: flex;
   width: 1200px;
+  padding: 0 70px;
 }
 
 .logo-sedona {
-  margin: 0 30px -5px 70px;
+  margin: 0 30px -5px 0;
   padding: 0;
   width: 139px;
   height: 70px;
@@ -45,14 +46,11 @@ body {
   text-decoration: none;
   display: flex;
   width: 891px;
-
 }
 
 .navigation-list {
   display: flex;
   list-style-type: none;
-  width: 390px;
-  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
@@ -134,7 +132,7 @@ slogan-image.sedona-grand-sucks {
 .about-sedona {
   display: block;
   margin: 0 auto;
-  padding: 63px 273px;
+  padding: 63px 0 90px;
 }
 
 .about-sedona-title {
@@ -143,15 +141,16 @@ slogan-image.sedona-grand-sucks {
   line-height: 36px;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 63px 0 31px 0;
+  margin: 0 auto 31px 0;
+  padding: 0;
 }
 
 .about-sedona-description {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
-  text-align: center;
-  margin: 0 0 27px 0;
+  margin: 0 auto;
+  padding: 0;
   width: 655px;
 }
 
@@ -314,7 +313,7 @@ slogan-image.sedona-grand-sucks {
   text-align: center;
   display: block;
   padding: 91px 304px 93px;
-  width: 100% auto;
+  width: auto;
 }
 
 .searсh-hotel-head {
@@ -736,15 +735,15 @@ html {
   display: flex;
   width: 1200px;
   margin: 0 auto;
-  padding: 40px 30px 70px;
+  padding: 40px 70px 30px;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .social-footer {
-  width: 142px;
-  margin: 5px 41px 5px 0;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .social {
@@ -755,8 +754,11 @@ html {
 }
 
 .social-item {
+  display: flex;
   min-width: 47px;
   min-height: 40px;
+  align-items: center;
+  justify-content: center;
 }
 
 .phone-footer {
