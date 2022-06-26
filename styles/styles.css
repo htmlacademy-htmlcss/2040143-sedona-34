@@ -28,8 +28,9 @@ body {
 
 .header-container {
   display: flex;
-  width: 1200px;
+  width: auto;
   padding: 0 70px;
+
 }
 
 .logo-sedona {
@@ -634,6 +635,9 @@ slogan-image.sedona-grand-sucks {
 
 .hotel-link {
   grid-column: 1/-1;
+}
+
+.hotel-card {
   object-fit: contain;
 }
 
