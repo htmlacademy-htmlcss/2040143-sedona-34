@@ -28,15 +28,15 @@ body {
 
 .header-container {
   display: flex;
-  width: 1200px;
+  width: auto;
   padding: 0 70px;
+
 }
 
 .logo-sedona {
-  margin: 0 30px -5px 0;
+  margin: 0 30px 0 0;
   padding: 0;
   width: 139px;
-  height: 70px;
 }
 
 .navigation {
@@ -103,6 +103,7 @@ body {
   background: url("../images/background/sedona-view-main.jpg") no-repeat #000000;
   background-size: 100% auto;
   height: 485px;
+  margin-top: -5px;
 }
 
 .slogan {
@@ -479,12 +480,10 @@ slogan-image.sedona-grand-sucks {
 
 .housing-filter.conveniences {
   width: 150px;
-  height: 149px;
 }
 
 .housing-filter.type {
   width: 145px;
-  height: 149px;
 }
 
 
@@ -576,37 +575,6 @@ slogan-image.sedona-grand-sucks {
 
 /*список подходящих гостиниц в мейне в каталоге*/
 
-.hotels-list {
-  margin: 56px 71px 66px 71px;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  list-style-type: none;
-  justify-content: flex-start;
-  width: 1056px;
-  height: 876px;
-}
-
-.hotel-item {
-  display: flex;
-  flex-direction: column;
-  width: 340px;
-  height: 438px;
-  margin-right: 18px;
-  flex-wrap: wrap;
-
-}
-
-.hotel-item:nth-child(3n) {
-  margin-right: 0
-}
-
-.hotel-card {
-  width: 300px;
-  height: 211px;
-  margin: 0;
-}
-
 .hotels-list .hotel-head {
   color: #000000;
   font-size: 24px;
@@ -614,18 +582,10 @@ slogan-image.sedona-grand-sucks {
   font-weight: 700;
 }
 
-.hotels-list .hotel-link {
+.hotels-list .hotel-link-title {
   text-decoration: none;
   font-size: 24px;
   line-height: 28px;
-  margin: 0;
-}
-
-.hotel-link-about {
-  margin: 0;
-}
-
-.add-to-liked {
   margin: 0;
 }
 
@@ -634,6 +594,16 @@ slogan-image.sedona-grand-sucks {
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
+  grid-column: 2/3;
+  display: block;
+  text-align: center;
+  align-items: center;
+  width: 140px;
+  height: 37px;
+  border-radius: 4px;
+  background-color: #F2F2F2;
+  padding: 8px 22px;
+  box-sizing: border-box;
 }
 
 .hotel-link-about.button-brown {
@@ -641,8 +611,50 @@ slogan-image.sedona-grand-sucks {
   height: 37px;
 }
 
-/*список подходящих гостиниц в мейне в каталоге конец*/
+/*каталог отелей*/
 
+.hotels-list {
+  display: grid;
+  list-style-type: none;
+  grid-template-columns: repeat(3, 340px);
+  margin-bottom: 66px;
+  column-gap: 18px;
+  width: 1056px;
+  margin: 0 auto 66px;
+  padding: 0;
+}
+
+.hotel-item {
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  grid-template-rows: 211px 28px 21px 37px 37px;
+  box-sizing: border-box;
+  padding: 20px;
+  gap: 16px 20px;
+}
+
+.hotel-link {
+  grid-column: 1/-1;
+}
+
+.hotel-card {
+  object-fit: contain;
+}
+
+.hotel-link-title {
+  grid-column: 1/-1;
+  padding: 0;
+  margin: 0;
+}
+
+.hotel-head {
+  padding: 0;
+  margin: 0;
+}
+
+/*каталог отелей конец*/
+
+/*список подходящих гостиниц в мейне в каталоге конец*/
 
 /*пагинация и количество гостиниц на странице*/
 
@@ -770,7 +782,6 @@ html {
 
 .htmlacademy-logo-footer {
   width: 115px;
-  height: 34px;
   margin: 8px 0 8px auto;
   padding: 0;
 }
