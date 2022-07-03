@@ -742,7 +742,6 @@ slogan-image.sedona-grand-sucks {
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
-  grid-column: 2/3;
   display: block;
   text-align: center;
   align-items: center;
@@ -752,6 +751,7 @@ slogan-image.sedona-grand-sucks {
   background-color: #F2F2F2;
   padding: 8px 22px;
   box-sizing: border-box;
+  grid-column: 2/3;
 }
 
 .hotel-link-about.button-brown {
@@ -781,6 +781,7 @@ slogan-image.sedona-grand-sucks {
   box-sizing: border-box;
   padding: 20px;
   gap: 16px 20px;
+  align-items: center;
 }
 
 .hotel-link {
@@ -800,6 +801,28 @@ slogan-image.sedona-grand-sucks {
 .hotel-head {
   padding: 0;
   margin: 0;
+}
+
+.hotel-item .stars {
+  background-image: url("../images/background/stars.svg");
+  background-size: 18px 17px;
+  background-repeat: space;
+  background-position: center left;
+}
+
+.four-stars {
+  width: 89px;
+  height: 17px;
+}
+
+.three-stars {
+  width: 66px;
+  height: 17px;
+}
+
+.two-stars {
+  width: 42px;
+  height: 17px;
 }
 
 /*каталог отелей конец*/
