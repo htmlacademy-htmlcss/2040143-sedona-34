@@ -26,17 +26,22 @@ body {
 
 /*хедер на главной и в каталоге*/
 
+
+
 .header-container {
   display: flex;
   width: auto;
   padding: 0 70px;
-
 }
 
 .logo-sedona {
-  margin: 0 30px 0 0;
   padding: 0;
   width: 139px;
+}
+
+.index-sedona {
+  padding: 0;
+  margin: 0 30px 0 0;
 }
 
 .navigation {
@@ -64,25 +69,50 @@ body {
   padding: 0;
 }
 
+.navigation-item-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #000000;
+}
+
+.user-navigation-item {
+  padding: 0;
+  margin: 0;
+
+}
+
 /* ссылки в хедерах*/
 
 .navigation-item-link {
   color: #000000;
   text-decoration: none;
-  padding: 20px 17px;
+  padding: 24px 12px;
   display: block;
+  text-align: center;
   margin: 0;
-  box-sizing: border-box;
+  position: relative;
+}
+
+.navigation-item-link-current::before {
+  position: absolute;
+  right: 12px;
+  bottom: 0;
+  left: 12px;
+  height: 2px;
+  width: auto;
+  background-color: #756257;
+  content: "";
 }
 
 .user-navigation .navigation-item-link {
-  min-width: 18px;
-  min-height: 18px;
-  padding: 24px 12px;
-  text-decoration: none;
-  box-sizing: border-box;
+  min-width: 19px;
+  min-height: 19px;
   display: block;
-  margin: 0;
+  position: relative;
 }
 
 .button-brown.navigation-item-link {
@@ -91,6 +121,7 @@ body {
   padding: 9px 15px 8px;
   box-sizing: border-box;
   margin: 0 0 0 20px;
+  display: inline-block;
 }
 
 /*ссылки в хедерах конец*/
@@ -103,7 +134,7 @@ body {
   background: url("../images/background/sedona-view-main.jpg") no-repeat #000000;
   background-size: 100% auto;
   height: 485px;
-  margin-top: -5px;
+
 }
 
 .slogan {
@@ -164,6 +195,8 @@ slogan-image.sedona-grand-sucks {
   text-align: center;
 }
 
+
+
 .advantages .advantage-title {
   font-weight: 700;
   text-transform: uppercase;
@@ -177,6 +210,27 @@ slogan-image.sedona-grand-sucks {
   display: flex;
   margin: 0;
   padding: 0;
+}
+
+.advantage-item-text.souvenirs {
+  background-image: url("../images/background/advantage-icons/souvenir.svg");
+  background-size: 64px 76px;
+  background-repeat: no-repeat;
+  background-position: center 80px;
+}
+
+.advantage-item-text.living {
+  background-image: url("../images/background/advantage-icons/living.svg");
+  background-size: 64px 76px;
+  background-repeat: no-repeat;
+  background-position: center 80px;
+}
+
+.advantage-item-text.food {
+  background-image: url("../images/background/advantage-icons/food.svg");
+  background-size: 64px 76px;
+  background-repeat: no-repeat;
+  background-position: center 80px;
 }
 
 .advantage-description {
@@ -207,6 +261,11 @@ slogan-image.sedona-grand-sucks {
   height: 384px;
   margin: 0;
   flex-wrap: wrap;
+}
+
+.detail .advantage-item-text {
+  justify-content: flex-start;
+  padding-top: 183px;
 }
 
 .advantage-item-text.light-blue {
@@ -276,6 +335,21 @@ slogan-image.sedona-grand-sucks {
   border-radius: 4px;
   text-align: center;
   border: 0;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.button-brown:hover,
+.button-brown:focus {
+  background-color: #615048;
+}
+
+.button-brown:active {
+  color: #FFFFFF4D;
+}
+
+.button-brown:disabled {
+  color: #E5E5E5;
 }
 
 .button-blue {
@@ -292,6 +366,21 @@ slogan-image.sedona-grand-sucks {
   width: 140px;
   height: 37px;
   border: 0;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.button-blue:hover,
+.button-blue:focus {
+  background-color: #68A2CA;
+}
+
+.button-blue:active {
+  color: #FFFFFF4D;
+}
+
+.button-blue:disabled {
+  color: #E5E5E5;
 }
 
 .searсh-hotel.button-brown {
@@ -305,6 +394,15 @@ slogan-image.sedona-grand-sucks {
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
+  display: inline-block;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  text-align: center;
+  width: 160px;
+  height: 40px;
+  padding: 0;
+  cursor: pointer;
 }
 
 /*конец кнопкам*/
@@ -360,6 +458,7 @@ slogan-image.sedona-grand-sucks {
   font-weight: 400;
   text-align: center;
   align-items: center;
+  border: 0;
 }
 
 .index-subscribe {
@@ -413,6 +512,8 @@ slogan-image.sedona-grand-sucks {
   border-bottom-left-radius: 0;
   margin: 0;
   border: 0;
+  cursor: pointer;
+  display: inline-block;
 }
 
 /*подписаться на рассылку конец*/
@@ -554,6 +655,44 @@ slogan-image.sedona-grand-sucks {
   padding: 0;
 }
 
+.apply-and-reset {
+  display: flex;
+  width: 160px;
+  padding: 0;
+  flex-wrap: wrap;
+  margin: auto 0 0 auto;
+  box-sizing: border-box;
+
+}
+
+.apply-and-reset .button-blue {
+  margin: 0;
+  padding: 0;
+  width: 160px;
+  height: 48px;
+}
+
+.view-hotels {
+  padding: 17px 16px;
+  border: solid 2px #E5E5E5;
+  border-radius: 4px;
+}
+
+.view-hotels:hover,
+.view-hotels:active {
+  border: solid 2px #000000;
+}
+
+.view-hotels:focus {
+  border: solid 2px #68A2CA;
+}
+
+.botton-icon {
+  display: inline-block;
+  /*чтобы ссылки не вылезали сбоку*/
+}
+
+
 /*хлебные крошки*/
 .breadcrumbs {
   display: flex;
@@ -563,11 +702,44 @@ slogan-image.sedona-grand-sucks {
   list-style-type: none;
   margin: 0 0 40px 0;
   padding: 0;
+  width: auto;
 }
 
 .breadcrumbs-item {
   margin-right: 25px;
+  position: relative;
+  width: auto;
+  padding: 0;
 }
+
+.breadcrumbs-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.breadcrumbs-item::after {
+  background: url("../images/breadcrumbs/breadcrumbs-arrow.svg") no-repeat;
+  width: 5px;
+  height: 8px;
+  top: 6px;
+  right: -15px;
+  content: "";
+  position: absolute;
+  display: block;
+}
+
+.breadcrumbs-item:last-child::after {
+  content: none;
+}
+
+.breadcrumbs-link:hover {
+  color: #FFFFFF99;
+}
+
+.breadcrumbs-link:hover .breadcrumbs-link-picture {
+  fill: #FFFFFF99;
+}
+
 
 /*хлебные крошки конец*/
 
@@ -594,7 +766,6 @@ slogan-image.sedona-grand-sucks {
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
-  grid-column: 2/3;
   display: block;
   text-align: center;
   align-items: center;
@@ -604,12 +775,15 @@ slogan-image.sedona-grand-sucks {
   background-color: #F2F2F2;
   padding: 8px 22px;
   box-sizing: border-box;
+  grid-column: 2/3;
 }
 
 .hotel-link-about.button-brown {
   width: 140px;
   height: 37px;
 }
+
+
 
 /*каталог отелей*/
 
@@ -631,6 +805,7 @@ slogan-image.sedona-grand-sucks {
   box-sizing: border-box;
   padding: 20px;
   gap: 16px 20px;
+  align-items: center;
 }
 
 .hotel-link {
@@ -650,6 +825,22 @@ slogan-image.sedona-grand-sucks {
 .hotel-head {
   padding: 0;
   margin: 0;
+}
+
+.stars-number-item {
+  background-image: url("../images/background/stars.svg");
+  background-size: 18px 17px;
+  background-repeat: no-repeat;
+  background-position: center left;
+  width: 18px;
+  height: 17px;
+  margin-right: 6px;
+}
+
+.stars-number {}
+
+.stars {
+  display: flex;
 }
 
 /*каталог отелей конец*/
@@ -691,6 +882,15 @@ slogan-image.sedona-grand-sucks {
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 4px;
+}
+
+.pagination-link:hover,
+.pagination:focus {
+  background-color: #68A2CA;
+}
+
+.pagination-link:active {
+  color: #FFFFFF4D;
 }
 
 .pagination-current {
@@ -773,6 +973,23 @@ html {
   justify-content: center;
 }
 
+.social-link {
+  color: #83B3D3;
+}
+
+.social-link:hover .social-link-item,
+.social-link:focus .social-link-item {
+  fill: #68A2CA;
+}
+
+.social-link:active .social-link-item {
+  fill: #68A2CA4D;
+}
+
+.social-link:disabled .social-link-item {
+  fill: #E5E5E5;
+}
+
 .phone-footer {
   text-align: center;
   width: 710px;
@@ -780,10 +997,32 @@ html {
   padding: 5px 0 5px 0;
 }
 
+.phone-number:hover,
+.phone-number:focus {
+  color: #756157;
+}
+
+.phone-number:active {
+  color: #7561574D;
+}
+
 .htmlacademy-logo-footer {
-  width: 115px;
   margin: 8px 0 8px auto;
   padding: 0;
+  width: 115px;
+}
+
+.htmlacademy-logo-link .htmlacademy-logo-icon {
+  color: #000000;
+}
+
+.htmlacademy-logo-link:hover .htmlacademy-logo-icon,
+.htmlacademy-logo-link:focus .htmlacademy-logo-icon {
+  fill: #756157
+}
+
+.htmlacademy-logo-link:active .htmlacademy-logo-icon {
+  fill: #7561574D;
 }
 
 /*футер конец*/
