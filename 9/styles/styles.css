@@ -195,9 +195,7 @@ slogan-image.sedona-grand-sucks {
   text-align: center;
 }
 
-.advantage-icon {
-  margin-bottom: 30px;
-}
+
 
 .advantages .advantage-title {
   font-weight: 700;
@@ -212,6 +210,27 @@ slogan-image.sedona-grand-sucks {
   display: flex;
   margin: 0;
   padding: 0;
+}
+
+.advantage-item-text.souvenirs {
+  background-image: url("../images/background/advantage-icons/souvenir.svg");
+  background-size: 64px 76px;
+  background-repeat: no-repeat;
+  background-position: center 80px;
+}
+
+.advantage-item-text.living {
+  background-image: url("../images/background/advantage-icons/living.svg");
+  background-size: 64px 76px;
+  background-repeat: no-repeat;
+  background-position: center 80px;
+}
+
+.advantage-item-text.food {
+  background-image: url("../images/background/advantage-icons/food.svg");
+  background-size: 64px 76px;
+  background-repeat: no-repeat;
+  background-position: center 80px;
 }
 
 .advantage-description {
@@ -242,6 +261,11 @@ slogan-image.sedona-grand-sucks {
   height: 384px;
   margin: 0;
   flex-wrap: wrap;
+}
+
+.detail .advantage-item-text {
+  justify-content: flex-start;
+  padding-top: 183px;
 }
 
 .advantage-item-text.light-blue {
@@ -803,26 +827,20 @@ slogan-image.sedona-grand-sucks {
   margin: 0;
 }
 
-.hotel-item .stars {
+.stars-number-item {
   background-image: url("../images/background/stars.svg");
   background-size: 18px 17px;
-  background-repeat: space;
+  background-repeat: no-repeat;
   background-position: center left;
+  width: 18px;
+  height: 17px;
+  margin-right: 6px;
 }
 
-.four-stars {
-  width: 89px;
-  height: 17px;
-}
+.stars-number {}
 
-.three-stars {
-  width: 66px;
-  height: 17px;
-}
-
-.two-stars {
-  width: 42px;
-  height: 17px;
+.stars {
+  display: flex;
 }
 
 /*каталог отелей конец*/
@@ -988,23 +1006,22 @@ html {
   color: #7561574D;
 }
 
-
 .htmlacademy-logo-footer {
-  width: 115px;
   margin: 8px 0 8px auto;
   padding: 0;
+  width: 115px;
 }
 
-.htmlacademy-logo-icon {
+.htmlacademy-logo-link .htmlacademy-logo-icon {
   color: #000000;
 }
 
-.htmlacademy-logo-icon:hover,
-.htmlacademy-logo-icon:focus {
+.htmlacademy-logo-link:hover .htmlacademy-logo-icon,
+.htmlacademy-logo-link:focus .htmlacademy-logo-icon {
   fill: #756157
 }
 
-.htmlacademy-logo-icon:active {
+.htmlacademy-logo-link:active .htmlacademy-logo-icon {
   fill: #7561574D;
 }
 
