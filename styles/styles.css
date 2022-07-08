@@ -390,18 +390,19 @@ slogan-image.sedona-grand-sucks {
 }
 
 .button-reset {
+
   color: #ffffff;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
-  display: inline-block;
   background-color: transparent;
   border: 0;
   margin: 0;
   text-align: center;
   width: 160px;
   height: 40px;
-  padding: 0;
+  padding-top: auto;
+
   cursor: pointer;
 }
 
@@ -476,7 +477,7 @@ slogan-image.sedona-grand-sucks {
 }
 
 .subscribe-title-about {
-  margin: 0 0 29px 0;
+  margin: 0 0 56px 0;
   font-weight: 400;
 }
 
@@ -495,8 +496,120 @@ slogan-image.sedona-grand-sucks {
   color: #333333;
   margin: 0;
   border: 0;
+  padding: 20px 22px;
   box-sizing: border-box;
+  flex-grow: 1;
 }
+
+/*рейндж слайдер*/
+
+.housing-filter-group,
+.housing-filter {
+  border: none;
+}
+
+.housing-filter-group {
+  width: 288px;
+  padding: 0;
+  margin: 0;
+}
+
+.range-scale {
+  position: relative;
+  height: 4px;
+  background-color: #3F5E72;
+  width: 288px;
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20PX;
+  height: 20px;
+  border-radius: 5px;
+  background: #ffffff;
+  cursor: pointer;
+  border: 0;
+}
+
+.range-toggle:focus,
+.range-toggle:active {
+  outline: 2px solid #83B3D3
+}
+
+.toggle-min {
+  top: -8px;
+  left: -10;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -10px;
+}
+
+.wrapper-inputs {
+  display: flex;
+  border: solid 2px #ffffff;
+  border-radius: 4px;
+  height: 48px;
+  width: 288px;
+  box-sizing: border-box;
+  margin: 0 70px 32px 0;
+}
+
+.range-input {
+  background-color: transparent;
+  width: 50px;
+  border: 0;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+.range-input-text {
+  color: ffffff;
+  opacity: 30%;
+}
+
+.housing-filter-input {
+  display: flex;
+  width: 144px;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+.left-filter-input {
+  padding: 0 14px 0 19px;
+}
+
+.right-filter-input {
+  padding: 0 17px;
+}
+
+.housing-filter-input:first-of-type::after {
+  content: '';
+  position: relative;
+  width: 2px;
+  height: 48px;
+  border-right: 2px solid #FFFFFF;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+/*рейндж слайдер конец*/
 
 .subscribe-form {
   display: flex;
@@ -570,6 +683,19 @@ slogan-image.sedona-grand-sucks {
   margin: 0;
 }
 
+.housing-priority:hover,
+.housing-priority:focus {
+  border: solid 2px #68A2CA;
+}
+
+.housing-priority:active {
+  border: solid 2px #3F5E72
+}
+
+.housing-priority:disabled {
+  border: solid 2px #0000004D
+}
+
 .housing-filter {
   padding: 0;
   font-size: 18px;
@@ -596,8 +722,10 @@ slogan-image.sedona-grand-sucks {
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
-  margin-bottom: 30px;
+  margin-bottom: 34px;
 }
+
+
 
 .housing-item:not(:last-child) {
   margin-bottom: 15px;
@@ -632,9 +760,7 @@ slogan-image.sedona-grand-sucks {
   padding: 0;
 }
 
-.housing-item-checkbox {
-  margin: 0;
-}
+
 
 .catalog-housing-requirements .catalog-housing-hotels {
   display: block;
@@ -662,7 +788,6 @@ slogan-image.sedona-grand-sucks {
   flex-wrap: wrap;
   margin: auto 0 0 auto;
   box-sizing: border-box;
-
 }
 
 .apply-and-reset .button-blue {
@@ -740,8 +865,50 @@ slogan-image.sedona-grand-sucks {
   fill: #FFFFFF99;
 }
 
-
 /*хлебные крошки конец*/
+
+/*чекбоксы*/
+
+.housing-item-checkbox-mark {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 0;
+  border-radius: 4px;
+  margin-right: 19px;
+  background-color: #ffffff;
+}
+
+.housing-item-checkbox[type="checkbox"]:checked + .control-mark {
+  background-image: url("../images/other-elements/checkbox-mark.svg");
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.checkbox-housing:hover .housing-item-checkbox-mark {
+  background-color: #68A2CA;
+}
+
+.housing-item-checkbox:checked .housing-item-checkbox-mark {
+  background-color: #615048;
+}
+
+.checkbox-housing {
+  position: relative;
+  display: block;
+}
+
+.housing-item-checkbox-label {
+  padding-left: 39px;
+}
+
+.housing-item-checkbox {
+  position: absolute;
+}
+
+
+/*чекбоксы конец*/
 
 /*фильтры выбора гостиниц в каталоге конец*/
 
@@ -836,8 +1003,6 @@ slogan-image.sedona-grand-sucks {
   height: 17px;
   margin-right: 6px;
 }
-
-.stars-number {}
 
 .stars {
   display: flex;

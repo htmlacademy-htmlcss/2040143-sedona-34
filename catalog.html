@@ -83,13 +83,24 @@
                 <legend class="housing-filter-title conveniences">Инфраструктура</legend>
                 <ul class="housing-list conveniences">
                   <li class="housing-item conveniences">
-                    <label><input type="checkbox" name="pool" class="housing-item-checkbox" checked>Бассейн</label>
+                    <label class="checkbox-housing">
+                      <input type="checkbox" name="pool" class="housing-item-checkbox" checked>
+                      <span class="housing-item-checkbox-mark"></span>
+                      <span class="housing-item-checkbox-label">Бассейн</span>
+                    </label>
                   </li>
                   <li class="housing-item conveniences">
-                    <label><input type="checkbox" name="parking" class="housing-item-checkbox" checked>Парковка</label>
+                    <label class="checkbox-housing"><input type="checkbox" name="parking" class="housing-item-checkbox"
+                        checked>
+                      <span class="housing-item-checkbox-mark"></span>
+                      <span class="housing-item-checkbox-label">Парковка</span>
+                    </label>
                   </li>
                   <li class="housing-item conveniences">
-                    <label><input type="checkbox" name="Wi-Fi" class="housing-item-checkbox">Wi-Fi</label>
+                    <label class="checkbox-housing"><input type="checkbox" name="Wi-Fi" class="housing-item-checkbox">
+                      <span class="housing-item-checkbox-mark"></span>
+                      <span class="housing-item-checkbox-label">Wi-Fi</span>
+                    </label>
                   </li>
                 </ul>
               </fieldset>
@@ -103,6 +114,31 @@
                   <li class="housing-item type"><label><input type="radio" name="housing-type-item" value="appartments"
                         class="housing-item-checkbox">Апартаменты</label></li>
                 </ul>
+              </fieldset>
+              <fieldset class="housing-filter-group">
+                <legend class="housing-filter-title">Стоимость, &#8381;:</legend>
+                <div class="wrapper-inputs">
+                  <label class="housing-filter-input left-filter-input">
+                    <input class="range-input left-range-input" type="number" value="0" name="min-price">
+                    <div class="range-input-text">от</div>
+                  </label>
+                  <label class="housing-filter-input right-filter-input">
+                    <input class="range-input right-range-input" type="number" value="9000" name="max-price">
+                    <div class="range-input-text">до</div>
+                  </label>
+                </div>
+                <div class="range">
+                  <div class="range-scale">
+                    <div class="range-bar" style="left: 0; width: 227px">
+                      <button class="range-toggle toggle-min">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button class="range-toggle toggle-max">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </fieldset>
               <div class="apply-and-reset">
                 <button type="submit" class="button-blue">Применить</button>
