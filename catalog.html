@@ -84,20 +84,21 @@
                 <ul class="housing-list conveniences">
                   <li class="housing-item conveniences">
                     <label class="checkbox-housing">
-                      <input type="checkbox" name="pool" class="housing-item-checkbox" checked>
+                      <input type="checkbox" name="pool" class="housing-item-checkbox visually-hidden" checked>
                       <span class="housing-item-checkbox-mark"></span>
                       <span class="housing-item-checkbox-label">Бассейн</span>
                     </label>
                   </li>
                   <li class="housing-item conveniences">
-                    <label class="checkbox-housing"><input type="checkbox" name="parking" class="housing-item-checkbox"
-                        checked>
+                    <label class="checkbox-housing">
+                      <input type="checkbox" name="parking" class="housing-item-checkbox visually-hidden" checked>
                       <span class="housing-item-checkbox-mark"></span>
                       <span class="housing-item-checkbox-label">Парковка</span>
                     </label>
                   </li>
                   <li class="housing-item conveniences">
-                    <label class="checkbox-housing"><input type="checkbox" name="Wi-Fi" class="housing-item-checkbox">
+                    <label class="checkbox-housing"><input type="checkbox" name="Wi-Fi"
+                        class="housing-item-checkbox visually-hidden">
                       <span class="housing-item-checkbox-mark"></span>
                       <span class="housing-item-checkbox-label">Wi-Fi</span>
                     </label>
@@ -107,12 +108,30 @@
               <fieldset class="housing-filter type">
                 <legend class="housing-filter-title type">Тип Жилья</legend>
                 <ul class="housing-list type">
-                  <li class="housing-item type"><label><input type="radio" name="housing-type-item" value="hotel"
-                        class="housing-item-checkbox" checked>Гостиница</label></li>
-                  <li class="housing-item type"><label><input type="radio" name="housing-type-item" value="motel"
-                        class="housing-item-checkbox">Мотель</label></li>
-                  <li class="housing-item type"><label><input type="radio" name="housing-type-item" value="appartments"
-                        class="housing-item-checkbox">Апартаменты</label></li>
+                  <li class="housing-item type">
+                    <label class="checkbox-housing">
+                      <input type="radio" name="housing-type-item" value="hotel"
+                        class="housing-item-checkbox visually-hidden" checked>
+                      <span class="housing-item-checkbox-mark"></span>
+                      <span class="housing-item-checkbox-label">Гостиница</span>
+                    </label>
+                  </li>
+                  <li class="housing-item type">
+                    <label class="checkbox-housing">
+                      <input type="radio" name="housing-type-item" value="motel"
+                        class="housing-item-checkbox visually-hidden">
+                      <span class="housing-item-checkbox-mark"></span>
+                      <span class="housing-item-checkbox-label">Мотель</span>
+                    </label>
+                  </li>
+                  <li class="housing-item type">
+                    <label class="checkbox-housing">
+                      <input type="radio" name="housing-type-item" value="appartments"
+                        class="housing-item-checkbox visually-hidden">
+                      <span class="housing-item-checkbox-mark"></span>
+                      <span class="housing-item-checkbox-label">Апартаменты</span>
+                    </label>
+                  </li>
                 </ul>
               </fieldset>
               <fieldset class="housing-filter-group">

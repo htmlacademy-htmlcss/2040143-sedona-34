@@ -585,23 +585,41 @@ slogan-image.sedona-grand-sucks {
   padding: 0;
   margin: 0;
   align-items: center;
+  box-sizing: border-box;
+}
+
+.housing-filter-input:active {
+  background-color: #756257;
+}
+
+.housing-filter-input:hover {
+  border: solid 2px rgba(255, 255, 255, 0.6)
+}
+
+.housing-filter-input:focus {
+  box-shadow: inset 0 0 0 3px #81B3D2;
 }
 
 .left-filter-input {
   padding: 0 14px 0 19px;
+  box-sizing: border-box;
 }
 
 .right-filter-input {
   padding: 0 17px;
+  box-sizing: border-box;
 }
 
-.housing-filter-input:first-of-type::after {
+.left-filter-input::after {
   content: '';
   position: relative;
   width: 2px;
   height: 48px;
   border-right: 2px solid #FFFFFF;
+  left: 14px;
 }
+
+
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
@@ -675,7 +693,7 @@ slogan-image.sedona-grand-sucks {
 .housing-priority {
   width: 290px;
   height: 49px;
-  padding: 14px 129px 14px 20px;
+  padding: 0 20px 0 20px;
   box-sizing: border-box;
   display: flex;
   border: #E5E5E5 2px solid;
@@ -686,6 +704,7 @@ slogan-image.sedona-grand-sucks {
 .housing-priority:hover,
 .housing-priority:focus {
   border: solid 2px #68A2CA;
+  outline: #68A2CA;
 }
 
 .housing-priority:active {
@@ -797,25 +816,33 @@ slogan-image.sedona-grand-sucks {
   height: 48px;
 }
 
+/*кнопки показа отелей*/
+
 .view-hotels {
   padding: 17px 16px;
   border: solid 2px #E5E5E5;
   border-radius: 4px;
+
 }
 
-.view-hotels:hover,
-.view-hotels:active {
+.botton-icon:hover .view-hotels,
+.botton-icon:active .view-hotels {
   border: solid 2px #000000;
 }
 
-.view-hotels:focus {
+.botton-icon:focus .view-hotels {
   border: solid 2px #68A2CA;
 }
 
 .botton-icon {
   display: inline-block;
+  box-sizing: border-box;
   /*чтобы ссылки не вылезали сбоку*/
 }
+
+/*кнопки показа отелей конец*/
+
+
 
 
 /*хлебные крошки*/
@@ -879,20 +906,26 @@ slogan-image.sedona-grand-sucks {
   background-color: #ffffff;
 }
 
-.housing-item-checkbox[type="checkbox"]:checked + .control-mark {
+.housing-item-checkbox[type="checkbox"]:checked + .housing-item-checkbox-mark {
   background-image: url("../images/other-elements/checkbox-mark.svg");
-  background-size: 20px 20px;
+  background-size: 12px 9px;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.checkbox-housing:hover .housing-item-checkbox-mark {
-  background-color: #68A2CA;
+.checkbox-housing:hover .housing-item-checkbox-mark,
+.checkbox-housing:focus .housing-item-checkbox-mark {
+  background-color: #FFFFFF99;
 }
 
-.housing-item-checkbox:checked .housing-item-checkbox-mark {
-  background-color: #615048;
+.checkbox-housing:focus .housing-item-checkbox-mark {
+  border: solid 3px #83B3D3;
 }
+
+.checkbox-housing:active .housing-item-checkbox-mark {
+  background-color: #FFFFFF4D
+}
+
 
 .checkbox-housing {
   position: relative;
@@ -905,6 +938,21 @@ slogan-image.sedona-grand-sucks {
 
 .housing-item-checkbox {
   position: absolute;
+}
+
+.housing-item-checkbox[type="radio"] + .housing-item-checkbox-mark {
+  border-radius: 50%;
+}
+
+.housing-item-checkbox[type="radio"]:checked + .housing-item-checkbox-mark::after {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #3F5E72;
+  content: "";
+  border-radius: 50%;
 }
 
 
@@ -1216,3 +1264,202 @@ html {
 }
 
 /*скрытый текст конец*/
+
+
+/*модальный контейнер*/
+.modal-container {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  background-color: #F2F2F2CC;
+}
+
+/*модальный контейнер конец*/
+
+/*модальное окно*/
+
+.modal {
+  margin: auto;
+  padding: 30px 70px 70px 70px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border-radius: 30px;
+}
+
+.modal-search {
+  width: 715px;
+  position: relative;
+  padding: 30px 70px 70px 70px;
+  box-sizing: border-box;
+}
+
+.modal-close-button {
+  background-image: url(../images/other-elements/close.svg);
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20px;
+  border-radius: 50%;
+  width: 13px;
+  height: 13px;
+  background-color: #F2F2F2;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  margin-top: 54px;
+  margin-right: 70px;
+  box-sizing: content-box;
+}
+
+.modal-search-title {
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.modal-search-forms {
+  display: grid;
+  grid-template-columns: (133px 133px 133px 133px);
+  grid-template-rows: (3 50px);
+  row-gap: 40px;
+  column-gap: 20px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  border: none;
+  padding: 0;
+}
+
+.date-arrival.modal-input-box {
+  grid-column: 2/5;
+}
+
+.date-leave.modal-input-box {
+  grid-column: 2/5;
+}
+
+.kids-number-label {
+  grid-column: 3/4;
+}
+
+.adult-number-label {
+  grid-column: 1/2;
+}
+
+.visitors-kids {
+  grid: 4/5;
+  width: 133px;
+}
+
+.visitors-adult {
+  grid: 4/5;
+  width: 133px;
+}
+
+.modal-input-box {
+  background-color: #F2F2F2;
+  padding: 15px 19px;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.modal-search-button {
+  width: 575px;
+  height: 60px;
+  padding: 0;
+}
+
+.modal-search-forms-form {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tooltip-button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+.tooltip-icon {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.tooltip-text {
+  background-color: #333333;
+  color: #ffffff;
+  width: 256px;
+  padding: 15px 18px 18px 22px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  position: absolute;
+  top: 100%;
+  margin-top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+}
+
+.label-fill {
+  position: relative;
+  padding-right: 25px;
+}
+
+.tooltip-button:hover + .tooltip-text,
+.tooltip-button:focus + .tooltip-text {
+  display: block;
+}
+
+.tooltip-text::before {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: rotate(45deg) translateX(-50%);
+  height: 13px;
+  width: 13px;
+  background-color: #333333;
+  content: "";
+}
+
+
+.modal-search-button {
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  justify-content: center;
+}
+
+
+.tooltip {
+  position: absolute;
+  margin-left: 6px;
+  width: 25px;
+  height: 25px;
+}
+
+/*модальное окно конец*/
+
+
+/*
+.hotel-item {
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  grid-template-rows: 211px 28px 21px 37px 37px;
+  box-sizing: border-box;
+  padding: 20px;
+  gap: 16px 20px;
+  align-items: center;
+}
+*/
