@@ -26,7 +26,10 @@ body {
 
 /*хедер на главной и в каталоге*/
 
-
+.page-header {
+  margin-bottom: -5px;
+  z-index: 1;
+}
 
 .header-container {
   display: flex;
@@ -37,11 +40,15 @@ body {
 .logo-sedona {
   padding: 0;
   width: 139px;
+  display: block;
+
 }
 
 .index-sedona {
   padding: 0;
   margin: 0 30px 0 0;
+  display: block;
+  outline: none;
 }
 
 .navigation {
@@ -82,7 +89,6 @@ body {
 .user-navigation-item {
   padding: 0;
   margin: 0;
-
 }
 
 /* ссылки в хедерах*/
@@ -90,11 +96,16 @@ body {
 .navigation-item-link {
   color: #000000;
   text-decoration: none;
-  padding: 24px 12px;
+  padding: 20px 12px;
   display: block;
   text-align: center;
   margin: 0;
   position: relative;
+  outline: none;
+}
+
+.header-navigation-item:not(:last-of-type) {
+  margin-right: 10px;
 }
 
 .navigation-item-link-current::before {
@@ -124,6 +135,35 @@ body {
   display: inline-block;
 }
 
+.item-favourite {
+  position: relative;
+}
+
+.item-favourite::after {
+  position: absolute;
+  top: 12px;
+  left: 25px;
+  height: 20px;
+  width: 20px;
+  background-color: rgba(125, 181, 79, 1);
+  border-radius: 50%;
+  content: "";
+}
+
+
+/*
+.tooltip-text::before {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: rotate(45deg) translateX(-50%);
+  height: 13px;
+  width: 13px;
+  background-color: #333333;
+  content: "";
+}
+*/
+
 /*ссылки в хедерах конец*/
 
 /*конец хедер на главной и в каталоге*/
@@ -133,16 +173,29 @@ body {
 .welcome-slogan {
   background: url("../images/background/sedona-view-main.jpg") no-repeat #000000;
   background-size: 100% auto;
-  height: 485px;
-
+  padding: 51px 0 79px 0;
+  display: block;
+  position: relative;
 }
 
-.slogan {
+.welcome-slogan .slogan {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 51px;
   box-sizing: border-box;
+}
+
+.welcome-slogan::after {
+  background: url("../images/other-elements/divider.svg") no-repeat;
+  width: 100%;
+  height: 57px;
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+
 }
 
 .slogan-image.welcome {
@@ -337,6 +390,7 @@ slogan-image.sedona-grand-sucks {
   border: 0;
   cursor: pointer;
   display: inline-block;
+  outline: none;
 }
 
 .button-brown:hover,
@@ -368,6 +422,7 @@ slogan-image.sedona-grand-sucks {
   border: 0;
   cursor: pointer;
   display: inline-block;
+  outline: none;
 }
 
 .button-blue:hover,
@@ -402,7 +457,6 @@ slogan-image.sedona-grand-sucks {
   width: 160px;
   height: 40px;
   padding-top: auto;
-
   cursor: pointer;
 }
 
@@ -493,12 +547,13 @@ slogan-image.sedona-grand-sucks {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   background-color: #F2F2F2;
-  color: #333333;
+  color: rgba(0, 0, 0, 1);
   margin: 0;
   border: 0;
   padding: 20px 22px;
   box-sizing: border-box;
   flex-grow: 1;
+  outline: none;
 }
 
 /*рейндж слайдер*/
@@ -562,7 +617,7 @@ slogan-image.sedona-grand-sucks {
   margin: 0 70px 32px 0;
 }
 
-.range-input {
+.housing-filter-input .range-input {
   background-color: transparent;
   width: 50px;
   border: 0;
@@ -574,7 +629,6 @@ slogan-image.sedona-grand-sucks {
 }
 
 .range-input-text {
-  color: ffffff;
   opacity: 30%;
 }
 
@@ -619,8 +673,6 @@ slogan-image.sedona-grand-sucks {
   left: 14px;
 }
 
-
-
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
   appearance: none;
@@ -662,8 +714,9 @@ slogan-image.sedona-grand-sucks {
 
 /*убираем подчеркивание с иконок выбора типа показа отелей*/
 
-.botton-icon {
+.button-icon {
   text-decoration: none;
+  outline: none;
 }
 
 /*убираем подчеркивание с иконок выбора типа показа отелей конец*/
@@ -699,6 +752,11 @@ slogan-image.sedona-grand-sucks {
   border: #E5E5E5 2px solid;
   border-radius: 4px;
   margin: 0;
+  appearance: none;
+  background-image: url(../images/other-elements/list-arrow.svg);
+  background-size: 12px 7px;
+  background-repeat: no-repeat;
+  background-position: 258px;
 }
 
 .housing-priority:hover,
@@ -822,19 +880,20 @@ slogan-image.sedona-grand-sucks {
   padding: 17px 16px;
   border: solid 2px #E5E5E5;
   border-radius: 4px;
+  display: block;
 
 }
 
-.botton-icon:hover .view-hotels,
-.botton-icon:active .view-hotels {
+.button-icon:hover .view-hotels,
+.button-icon:active .view-hotels {
   border: solid 2px #000000;
 }
 
-.botton-icon:focus .view-hotels {
+.button-icon:focus .view-hotels {
   border: solid 2px #68A2CA;
 }
 
-.botton-icon {
+.button-icon {
   display: inline-block;
   box-sizing: border-box;
   /*чтобы ссылки не вылезали сбоку*/
@@ -998,7 +1057,13 @@ slogan-image.sedona-grand-sucks {
   height: 37px;
 }
 
+.hotels-list {
+  border-bottom: solid 1px #E6E6E6;
+}
 
+.hotel-item:last-child {
+  margin-bottom: 66px;
+}
 
 /*каталог отелей*/
 
@@ -1029,6 +1094,7 @@ slogan-image.sedona-grand-sucks {
 
 .hotel-card {
   object-fit: contain;
+  display: block;
 }
 
 .hotel-link-title {
@@ -1119,11 +1185,7 @@ slogan-image.sedona-grand-sucks {
   margin-left: auto;
   display: flex;
   padding: 0;
-}
-
-hotels-on-page-name {
-  margin: 0 51px 0 0;
-  width: 175px;
+  justify-content: space-between;
 }
 
 .number-of-hotels {
@@ -1134,6 +1196,11 @@ hotels-on-page-name {
   padding: 14px 20px;
   box-sizing: border-box;
   margin: 0;
+  appearance: none;
+  background-image: url(../images/other-elements/list-arrow.svg);
+  background-size: 12px 7px;
+  background-repeat: no-repeat;
+  background-position: 128px;
 }
 
 /*пагинация и количество гостиниц на странице конец*/
@@ -1188,6 +1255,7 @@ html {
 
 .social-link {
   color: #83B3D3;
+  outline: none;
 }
 
 .social-link:hover .social-link-item,
@@ -1213,6 +1281,7 @@ html {
 .phone-number:hover,
 .phone-number:focus {
   color: #756157;
+  outline: none;
 }
 
 .phone-number:active {
@@ -1231,11 +1300,15 @@ html {
 
 .htmlacademy-logo-link:hover .htmlacademy-logo-icon,
 .htmlacademy-logo-link:focus .htmlacademy-logo-icon {
-  fill: #756157
+  fill: #756157;
 }
 
 .htmlacademy-logo-link:active .htmlacademy-logo-icon {
   fill: #7561574D;
+}
+
+.htmlacademy-logo-link {
+  outline: none;
 }
 
 /*футер конец*/
@@ -1275,7 +1348,12 @@ html {
   width: 100%;
   display: flex;
   background-color: #F2F2F2CC;
+  font-family: inherit;
+  z-index: 2;
+  display: none;
 }
+
+
 
 /*модальный контейнер конец*/
 
@@ -1320,6 +1398,7 @@ html {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
+  margin-bottom: 63px;
 }
 
 .modal-search-forms {
@@ -1360,6 +1439,18 @@ html {
 .visitors-adult {
   grid: 4/5;
   width: 133px;
+  color: #000000;
+}
+
+.modal-input-box[type='number'],
+.modal-input-box[type="number"]:hover,
+.modal-input-box[type="number"]:focus {
+  appearance: none;
+}
+
+.modal-input-box[type="number"]::-webkit-outer-spin-button,
+.modal-input-box[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }
 
 .modal-input-box {
@@ -1368,6 +1459,20 @@ html {
   border: none;
   border-radius: 4px;
   box-sizing: border-box;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+.date-arrival.modal-input-box,
+.date-leave.modal-input-box {
+  background-image: url(../images/other-elements/calendar.svg);
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  background-position: 386px 18px;
 }
 
 .modal-search-button {
@@ -1407,8 +1512,13 @@ html {
   top: 100%;
   margin-top: 15px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-51%);
   display: none;
+}
+
+.visitors-adult.modal-input-box,
+.visitors-kids.modal-input-box {
+  text-align: center;
 }
 
 .label-fill {
@@ -1452,14 +1562,37 @@ html {
 /*модальное окно конец*/
 
 
-/*
-.hotel-item {
-  display: grid;
-  grid-template-columns: repeat(2, 140px);
-  grid-template-rows: 211px 28px 21px 37px 37px;
-  box-sizing: border-box;
-  padding: 20px;
-  gap: 16px 20px;
-  align-items: center;
+.button-plus {
+  background: url(../images/other-elements/plus.svg);
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  border: none;
+  right: 19px;
+  top: 16px;
+  cursor: pointer;
+  opacity: 30%;
+  padding: 0;
+  margin: 0;
 }
-*/
+
+.button-minus {
+  background: url(../images/other-elements/minus.svg);
+  background-position: center;
+  width: 13px;
+  height: 1px;
+  background-repeat: no-repeat;
+  position: absolute;
+  border: none;
+  left: 19px;
+  top: 16px;
+  cursor: pointer;
+  opacity: 30%;
+  padding: 8px 0;
+  margin: 0;
+
+}
+
+.visitors-container {
+  position: relative;
+}
