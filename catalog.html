@@ -41,7 +41,7 @@
                 </a>
               </li>
               <li class="user-navigation-item favourite">
-                <a href="#" class="navigation-item-link">
+                <a href="#" class="navigation-item-link item-favourite">
                   <svg class="navigation-item-icon" aria-hidden="true" focusable="false" width="19" height="17"
                     viewBox="0 0 19 17" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -83,26 +83,77 @@
                 <legend class="housing-filter-title conveniences">Инфраструктура</legend>
                 <ul class="housing-list conveniences">
                   <li class="housing-item conveniences">
-                    <label><input type="checkbox" name="pool" class="housing-item-checkbox" checked>Бассейн</label>
+                    <label class="checkbox-housing">
+                      <input type="checkbox" name="pool" class="housing-item-checkbox" checked>
+                      <span class="housing-item-checkbox-mark"></span>
+                      <span class="housing-item-checkbox-label">Бассейн</span>
+                    </label>
                   </li>
                   <li class="housing-item conveniences">
-                    <label><input type="checkbox" name="parking" class="housing-item-checkbox" checked>Парковка</label>
+                    <label class="checkbox-housing">
+                      <input type="checkbox" name="parking" class="housing-item-checkbox" checked>
+                      <span class="housing-item-checkbox-mark"></span>
+                      <span class="housing-item-checkbox-label">Парковка</span>
+                    </label>
                   </li>
                   <li class="housing-item conveniences">
-                    <label><input type="checkbox" name="Wi-Fi" class="housing-item-checkbox">Wi-Fi</label>
+                    <label class="checkbox-housing"><input type="checkbox" name="Wi-Fi" class="housing-item-checkbox">
+                      <span class="housing-item-checkbox-mark"></span>
+                      <span class="housing-item-checkbox-label">Wi-Fi</span>
+                    </label>
                   </li>
                 </ul>
               </fieldset>
               <fieldset class="housing-filter type">
                 <legend class="housing-filter-title type">Тип Жилья</legend>
                 <ul class="housing-list type">
-                  <li class="housing-item type"><label><input type="radio" name="housing-type-item" value="hotel"
-                        class="housing-item-checkbox" checked>Гостиница</label></li>
-                  <li class="housing-item type"><label><input type="radio" name="housing-type-item" value="motel"
-                        class="housing-item-checkbox">Мотель</label></li>
-                  <li class="housing-item type"><label><input type="radio" name="housing-type-item" value="appartments"
-                        class="housing-item-checkbox">Апартаменты</label></li>
+                  <li class="housing-item type">
+                    <label class="checkbox-housing">
+                      <input type="radio" name="housing-type-item" value="hotel" class="housing-item-checkbox" checked>
+                      <span class="housing-item-checkbox-mark"></span>
+                      <span class="housing-item-checkbox-label">Гостиница</span>
+                    </label>
+                  </li>
+                  <li class="housing-item type">
+                    <label class="checkbox-housing">
+                      <input type="radio" name="housing-type-item" value="motel" class="housing-item-checkbox">
+                      <span class="housing-item-checkbox-mark"></span>
+                      <span class="housing-item-checkbox-label">Мотель</span>
+                    </label>
+                  </li>
+                  <li class="housing-item type">
+                    <label class="checkbox-housing">
+                      <input type="radio" name="housing-type-item" value="appartments" class="housing-item-checkbox">
+                      <span class="housing-item-checkbox-mark"></span>
+                      <span class="housing-item-checkbox-label">Апартаменты</span>
+                    </label>
+                  </li>
                 </ul>
+              </fieldset>
+              <fieldset class="housing-filter-group">
+                <legend class="housing-filter-title">Стоимость, &#8381;:</legend>
+                <div class="wrapper-inputs">
+                  <label class="housing-filter-input left-filter-input">
+                    <input class="range-input left-range-input" type="number" value="0" name="min-price">
+                    <span class="range-input-text">от</span>
+                  </label>
+                  <label class="housing-filter-input right-filter-input">
+                    <input class="range-input right-range-input" type="number" value="9000" name="max-price">
+                    <span class="range-input-text">до</span>
+                  </label>
+                </div>
+                <div class="range">
+                  <div class="range-scale">
+                    <div class="range-bar" style="left: 0; width: 227px">
+                      <button class="range-toggle toggle-min">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button class="range-toggle toggle-max">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </fieldset>
               <div class="apply-and-reset">
                 <button type="submit" class="button-blue">Применить</button>
@@ -118,7 +169,7 @@
             <option value="suitable">Сначала популярные</option>
           </select>
           <div class="housing-filters-type-view">
-            <a href="#" class="botton-icon table">
+            <a href="#" class="button-icon table">
               <svg class="view-hotels" aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14"
                 xmlns="http://www.w3.org/2000/svg">
                 <path d="M4 0H0V6H4V0Z" fill="black" />
@@ -130,7 +181,7 @@
               </svg>
               <div class="visually-hidden">Показать таблицей.</div>
             </a>
-            <a href="#" class="botton-icon slideshow">
+            <a href="#" class="button-icon slideshow">
               <svg class="view-hotels" aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14"
                 xmlns="http://www.w3.org/2000/svg">
                 <path d="M16 12H0V14H16V12Z" fill="black" />
@@ -138,7 +189,7 @@
               </svg>
               <div class="visually-hidden">Показать слайдшоу.</div>
             </a>
-            <a href="#" class="botton-icon list">
+            <a href="#" class="button-icon list">
               <svg class="view-hotels" aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14"
                 xmlns="http://www.w3.org/2000/svg">
                 <path d="M2 0H0V2H2V0Z" fill="black" />
@@ -169,12 +220,12 @@
               <a class="hotel-link-about button-brown" href="#">Подробнее
               </a>
               <button class="add-to-liked button-blue" type="submit">В избранное</button>
-              <span class="stars four-stars">
-                <div class="stars-number-item"></div>
-                <div class="stars-number-item"></div>
-                <div class="stars-number-item"></div>
-                <div class="stars-number-item"></div>
-              </span>
+              <div class="stars four-stars">
+                <span class="stars-number-item"></span>
+                <span class="stars-number-item"></span>
+                <span class="stars-number-item"></span>
+                <span class="stars-number-item"></span>
+              </div>
               <span class="rating">Рейтинг: 8,5</span>
             </li>
             <li class="hotel-item">
@@ -190,12 +241,12 @@
               <a class="hotel-link-about button-brown" href="#">Побробнее
               </a>
               <button class="add-to-liked button-blue" type="submit">В избранное</button>
-              <span class="stars four-stars">
-                <div class="stars-number-item"></div>
-                <div class="stars-number-item"></div>
-                <div class="stars-number-item"></div>
-                <div class="stars-number-item"></div>
-              </span>
+              <div class="stars four-stars">
+                <span class="stars-number-item"></span>
+                <span class="stars-number-item"></span>
+                <span class="stars-number-item"></span>
+                <span class="stars-number-item"></span>
+              </div>
               <span class="rating">Рейтинг: 9,2</span>
 
             </li>
@@ -212,9 +263,9 @@
               <a class="hotel-link-about button-brown" href="#">Побробнее</a>
               <button class="add-to-liked button-blue" type="submit">В избранное</button>
               <div class="stars three-stars">
-                <div class="stars-number-item"></div>
-                <div class="stars-number-item"></div>
-                <div class="stars-number-item"></div>
+                <span class="stars-number-item"></span>
+                <span class="stars-number-item"></span>
+                <span class="stars-number-item"></span>
               </div>
               <span class="rating">Рейтинг: 6,9</span>
             </li>
@@ -229,10 +280,10 @@
               <span class="hotel-price">От 1500 рублей</span>
               <a class="hotel-link-about button-brown" href="#">Побробнее</a>
               <button class="add-to-liked button-blue" type="submit">В избранное</button>
-              <span class="stars two-stars">
-                <div class="stars-number-item"></div>
-                <div class="stars-number-item"></div>
-              </span>
+              <div class="stars two-stars">
+                <span class="stars-number-item"></span>
+                <span class="stars-number-item"></span>
+              </div>
               <span class="rating">Рейтинг: 5,0</span>
             </li>
           </ul>

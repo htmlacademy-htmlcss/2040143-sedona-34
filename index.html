@@ -18,13 +18,13 @@
           </a>
           <nav class="navigation">
             <ul class="navigation-list">
-              <li class="index-header navigation-item-main">
+              <li class="header-navigation-item">
                 <a href="index.html" class="navigation-item-link navigation-item-link-current">Главная</a>
               </li>
-              <li class="index-navigation-item-about-sedona">
+              <li class="header-navigation-item">
                 <a href="#" class="navigation-item-link">О Седоне</a>
               </li>
-              <li class="index-navigation-item-hotels">
+              <li class="header-navigation-item">
                 <a href="catalog.html" class="navigation-item-link">Гостиницы</a>
               </li>
             </ul>
@@ -41,7 +41,7 @@
                 </a>
               </li>
               <li class="user-navigation-item favourite">
-                <a href="#" class="navigation-item-link">
+                <a href="#" class="navigation-item-link item-favourite">
                   <svg class="navigation-item-icon" aria-hidden="true" focusable="false" width="19" height="17"
                     viewBox="0 0 19 17" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -149,7 +149,8 @@
           <h3 class="searсh-hotel-head">Заинтересовались?</h3>
           <p class="searсh-hotel-offer"> Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения
             гостиниц в Седоне</p>
-          <a href="catalog.html" class="searсh-hotel-link button-brown">Поиск гостиницы в Седоне</a>
+          <a href="catalog.html" class="searсh-hotel-link button-brown">Поиск гостиницы в
+            Седоне</a>
         </section>
         <section class="subscribe index-subscribe">
           <h3 class="subscribe-title index-subscribing">Подпишитесь на рассылку</h3>
@@ -228,6 +229,69 @@
           </section>
         </div>
       </footer>
+      <div class="modal-container-invisible" id="modal-page">
+        <div class="modal modal-search">
+          <button class="modal-close-button" type="button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <section class="modal-search-content">
+            <h2 class="modal-search-title">Поиск гостиницы в Седоне</h2>
+            <form class="modal-search-forms-form" action="#" method="post">
+              <fieldset class="modal-search-forms">
+                <legend class="visually-hidden"></legend>
+                <label for="date-arrival-id" class="date-arrival-label">Дата Заезда:</label>
+                <input class="date-arrival modal-input-box" id="date-arrival-id" type="date" name="arrival-date"
+                  placeholder="27 апреля 2020">
+
+                <label for="date-leave-id" class="date-leave-label">Дата Выезда:</label>
+                <input class="date-leave modal-input-box" id="date-leave-id" type="date" name="date">
+                <label for="adult-number" class="adult-number-label">Взрослые</label>
+                <div class="visitors-container">
+                  <input class="visitors-adult modal-input-box" id="adult-number" type="number" name="number"
+                    placeholder="2">
+                  <button class="button-plus" type="button"></button>
+                  <button class="button-minus" type="button"></button>
+                </div>
+                <span class="kids-number-label label-fill">
+                  <label for="kids-number" class="kids-number-label">Дети:</label>
+
+                  <span class="tooltip">
+                    <button class="tooltip-button" type="button" aria-labelledby="tooltip-label">
+                      <svg class="tooltip-icon" aria-hidden="true" focusable="false" width="25" height="25"
+                        viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12.5" cy="12.5" r="12.5" fill="#68A2CA" />
+                        <g clip-path="url(#clip0_58701_455)">
+                          <path d="M12 17H13V11H12V17Z" fill="white" />
+                          <path d="M13 8H12V9H13V8Z" fill="white" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_58701_455">
+                            <rect width="1" height="9" fill="white" transform="translate(12 8)" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label">
+                      Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
+                      размещаются бесплатно.
+                    </span>
+                  </span>
+
+                </span>
+                <div class="visitors-container">
+                  <input class="visitors-kids modal-input-box" id="kids-number" type="number" name="number"
+                    placeholder="0">
+                  <button class="button-plus" type="button"></button>
+                  <button class="button-minus" type="button"></button>
+                </div>
+              </fieldset>
+            </form>
+            <button class="button-blue modal-search-button">
+              Найти
+            </button>
+          </section>
+        </div>
+      </div>
     </div>
   </body>
 
