@@ -978,6 +978,7 @@ slogan-image.sedona-grand-sucks {
   border-radius: 4px;
   margin-right: 19px;
   background-color: #ffffff;
+  box-sizing: border-box;
 }
 
 .housing-item-checkbox[type="checkbox"]:checked + .housing-item-checkbox-mark {
@@ -985,15 +986,18 @@ slogan-image.sedona-grand-sucks {
   background-size: 12px 9px;
   background-repeat: no-repeat;
   background-position: center;
+
 }
 
-.housing-item-checkbox:hover ~ .housing-item-checkbox-mark,
+.housing-item-checkboxs:hover ~ .housing-item-checkbox-mark,
 .housing-item-checkbox:focus ~ .housing-item-checkbox-mark {
   background-color: #FFFFFF99;
+
 }
 
 .housing-item-checkbox:focus ~ .housing-item-checkbox-mark {
-  border: solid 3px #83B3D3;
+  box-shadow: 0 0 0 3px #83B3D3;
+
 }
 
 .housing-item-checkbox:active ~ .housing-item-checkbox-mark {
@@ -1484,6 +1488,7 @@ html {
   box-sizing: border-box;
   font-size: 18px;
   line-height: 21px;
+  font-family: inherit;
 }
 
 input[type=date]::-webkit-calendar-picker-indicator {
