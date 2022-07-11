@@ -987,16 +987,16 @@ slogan-image.sedona-grand-sucks {
   background-position: center;
 }
 
-.checkbox-housing:hover ~ .housing-item-checkbox-mark,
-.checkbox-housing:focus .housing-item-checkbox-mark {
+.housing-item-checkbox:hover ~ .housing-item-checkbox-mark,
+.housing-item-checkbox:focus ~ .housing-item-checkbox-mark {
   background-color: #FFFFFF99;
 }
 
-.checkbox-housing:focus .housing-item-checkbox-mark {
+.housing-item-checkbox:focus ~ .housing-item-checkbox-mark {
   border: solid 3px #83B3D3;
 }
 
-.checkbox-housing:active .housing-item-checkbox-mark {
+.housing-item-checkbox:active ~ .housing-item-checkbox-mark {
   background-color: #FFFFFF4D
 }
 
@@ -1498,25 +1498,37 @@ input[type=date]::-webkit-calendar-picker-indicator {
   background-position: 386px 18px;
 }
 
+/*кнопка найти*/
+
+.modal-search-button {
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  justify-content: center;
+}
+
 .modal-search-content .modal-search-button {
   width: 575px;
   height: 60px;
   padding: 0;
-  background-color: #68A2CA;
+  background-color: #83B3D3;
 }
 
-.modal-search-content .modal-search-button:focus {
+.modal-search-button:focus {
   box-shadow: 0 0 0 3px rgba(117, 98, 87, 1);
 }
 
-.modal-search-content .modal-search-button:hover {
+.modal-search-button:hover {
   background-color: #68A2CA;
 }
 
-.modal-search-button:active {
+.modal-search-content .modal-search-button:active {
   box-shadow: none;
   outline: none;
 }
+
+/*кнопка найти конец*/
 
 .modal-search-forms-form {
   border: none;
@@ -1532,11 +1544,15 @@ input[type=date]::-webkit-calendar-picker-indicator {
   display: block;
 }
 
-.tooltip-icon {
+.tooltip-button .tooltip-icon {
   width: 100%;
   height: 100%;
   display: block;
-  fill: #68A2CA
+  color: #83B3D3;
+}
+
+.tooltip-button:hover .tooltip-icon {
+  color: #68A2CA;
 }
 
 .tooltip-text {
@@ -1552,6 +1568,10 @@ input[type=date]::-webkit-calendar-picker-indicator {
   left: 50%;
   transform: translateX(-51%);
   display: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+
 }
 
 .visitors-adult.modal-input-box,
@@ -1579,16 +1599,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
   background-color: #333333;
   content: "";
 }
-
-
-.modal-search-button {
-  text-transform: uppercase;
-  font-size: 20px;
-  line-height: 36px;
-  font-weight: 700;
-  justify-content: center;
-}
-
 
 .tooltip {
   position: absolute;
