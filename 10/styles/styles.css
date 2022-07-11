@@ -147,22 +147,13 @@ body {
   width: 20px;
   background-color: rgba(125, 181, 79, 1);
   border-radius: 50%;
-  content: "";
+  content: "12";
+  font-size: 10px;
+  line-height: 13px;
+  color: #ffffff;
+  padding-top: 4px;
+  box-sizing: border-box;
 }
-
-
-/*
-.tooltip-text::before {
-  position: absolute;
-  left: 50%;
-  top: 0;
-  transform: rotate(45deg) translateX(-50%);
-  height: 13px;
-  width: 13px;
-  background-color: #333333;
-  content: "";
-}
-*/
 
 /*ссылки в хедерах конец*/
 
@@ -445,7 +436,6 @@ slogan-image.sedona-grand-sucks {
 }
 
 .button-reset {
-
   color: #ffffff;
   font-size: 16px;
   line-height: 20px;
@@ -458,6 +448,17 @@ slogan-image.sedona-grand-sucks {
   height: 40px;
   padding-top: auto;
   cursor: pointer;
+  outline: none;
+}
+
+.button-reset:hover {
+  opacity: 60%
+}
+
+.button-reset:focus {
+  border: solid 3px #83B3D3;
+  border-radius: 4px;
+
 }
 
 /*конец кнопкам*/
@@ -554,6 +555,8 @@ slogan-image.sedona-grand-sucks {
   box-sizing: border-box;
   flex-grow: 1;
   outline: none;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 /*рейндж слайдер*/
@@ -592,9 +595,12 @@ slogan-image.sedona-grand-sucks {
   border: 0;
 }
 
-.range-toggle:focus,
 .range-toggle:active {
   outline: 2px solid #83B3D3
+}
+
+.range-toggle:focus {
+  outline: 3px solid #83B3D3
 }
 
 .toggle-min {
@@ -609,7 +615,7 @@ slogan-image.sedona-grand-sucks {
 
 .wrapper-inputs {
   display: flex;
-  border: solid 2px #ffffff;
+  /*border: solid 2px #ffffff;*/
   border-radius: 4px;
   height: 48px;
   width: 288px;
@@ -657,13 +663,22 @@ slogan-image.sedona-grand-sucks {
 .left-filter-input {
   padding: 0 14px 0 19px;
   box-sizing: border-box;
+  border: solid 2px #ffffff;
+  border-right: 1px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
 }
 
 .right-filter-input {
   padding: 0 17px;
   box-sizing: border-box;
+  outline: none;
+  border: solid 2px #ffffff;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 
+/*
 .left-filter-input::after {
   content: '';
   position: relative;
@@ -672,6 +687,7 @@ slogan-image.sedona-grand-sucks {
   border-right: 2px solid #FFFFFF;
   left: 14px;
 }
+*/
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
@@ -881,7 +897,6 @@ slogan-image.sedona-grand-sucks {
   border: solid 2px #E5E5E5;
   border-radius: 4px;
   display: block;
-
 }
 
 .button-icon:hover .view-hotels,
@@ -972,7 +987,7 @@ slogan-image.sedona-grand-sucks {
   background-position: center;
 }
 
-.checkbox-housing:hover .housing-item-checkbox-mark,
+.checkbox-housing:hover ~ .housing-item-checkbox-mark,
 .checkbox-housing:focus .housing-item-checkbox-mark {
   background-color: #FFFFFF99;
 }
@@ -997,6 +1012,7 @@ slogan-image.sedona-grand-sucks {
 
 .housing-item-checkbox {
   position: absolute;
+  opacity: 0;
 }
 
 .housing-item-checkbox[type="radio"] + .housing-item-checkbox-mark {
@@ -1164,7 +1180,7 @@ slogan-image.sedona-grand-sucks {
 }
 
 .pagination-link:hover,
-.pagination:focus {
+.pagination-link:focus {
   background-color: #68A2CA;
 }
 
@@ -1230,6 +1246,7 @@ html {
   padding: 40px 70px 30px;
   align-items: center;
   box-sizing: border-box;
+
 }
 
 .social-footer {
@@ -1340,7 +1357,7 @@ html {
 
 
 /*модальный контейнер*/
-.modal-container {
+.modal-container-active {
   position: fixed;
   top: 0;
   height: 100%;
@@ -1350,9 +1367,11 @@ html {
   background-color: #F2F2F2CC;
   font-family: inherit;
   z-index: 2;
-  display: none;
 }
 
+.modal-container-invisible {
+  display: none;
+}
 
 
 /*модальный контейнер конец*/
@@ -1365,6 +1384,7 @@ html {
   box-sizing: border-box;
   background-color: #ffffff;
   border-radius: 30px;
+  font-family: inherit;
 }
 
 .modal-search {
@@ -1413,6 +1433,9 @@ html {
   margin-bottom: 40px;
   border: none;
   padding: 0;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
 }
 
 .date-arrival.modal-input-box {
@@ -1475,10 +1498,24 @@ input[type=date]::-webkit-calendar-picker-indicator {
   background-position: 386px 18px;
 }
 
-.modal-search-button {
+.modal-search-content .modal-search-button {
   width: 575px;
   height: 60px;
   padding: 0;
+  background-color: #68A2CA;
+}
+
+.modal-search-content .modal-search-button:focus {
+  box-shadow: 0 0 0 3px rgba(117, 98, 87, 1);
+}
+
+.modal-search-content .modal-search-button:hover {
+  background-color: #68A2CA;
+}
+
+.modal-search-button:active {
+  box-shadow: none;
+  outline: none;
 }
 
 .modal-search-forms-form {
@@ -1499,6 +1536,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   width: 100%;
   height: 100%;
   display: block;
+  fill: #68A2CA
 }
 
 .tooltip-text {
@@ -1569,7 +1607,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   position: absolute;
   border: none;
   right: 19px;
-  top: 16px;
+  top: 19px;
   cursor: pointer;
   opacity: 30%;
   padding: 0;
@@ -1585,12 +1623,11 @@ input[type=date]::-webkit-calendar-picker-indicator {
   position: absolute;
   border: none;
   left: 19px;
-  top: 16px;
+  top: 19px;
   cursor: pointer;
   opacity: 30%;
   padding: 8px 0;
   margin: 0;
-
 }
 
 .visitors-container {
