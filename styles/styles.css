@@ -1426,7 +1426,7 @@ html {
 /*модальное окно*/
 
 .modal {
-  margin: 396px auto auto auto;
+  margin: auto;
   box-sizing: border-box;
   background-color: #ffffff;
   border-radius: 30px;
