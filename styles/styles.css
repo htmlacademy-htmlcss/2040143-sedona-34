@@ -723,8 +723,12 @@ slogan-image.sedona-grand-sucks {
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
-  appearance: none;
   margin: 0;
+  appearance: none;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
 }
 
 /*рейндж слайдер конец*/
@@ -1409,6 +1413,7 @@ html {
   background-color: #F2F2F2CC;
   font-family: inherit;
   z-index: 2;
+  align-items: center;
 }
 
 .modal-container-invisible {
@@ -1427,6 +1432,7 @@ html {
   border-radius: 30px;
   font-family: inherit;
   position: fixed;
+  height: fit-content;
 }
 
 .modal-search {
@@ -1511,6 +1517,10 @@ html {
 .modal-input-box[type="number"]:hover,
 .modal-input-box[type="number"]:focus {
   appearance: none;
+}
+
+.modal-input-box[type='number'] {
+  -moz-appearance: textfield;
 }
 
 .modal-input-box[type="number"]::-webkit-outer-spin-button,
