@@ -243,7 +243,9 @@ slogan-image.sedona-grand-sucks {
   text-align: center;
 }
 
-
+.advantage-item-picture {
+  object-fit: cover;
+}
 
 .advantages .advantage-title {
   font-weight: 700;
@@ -258,6 +260,7 @@ slogan-image.sedona-grand-sucks {
   display: flex;
   margin: 0;
   padding: 0;
+  min-height: 384px;
 }
 
 .advantage-item-text.souvenirs {
@@ -301,19 +304,25 @@ slogan-image.sedona-grand-sucks {
 .advantage-item-text {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 0 85px;
+  justify-content: start;
+  padding: 15px 85px;
   box-sizing: border-box;
   align-items: center;
   width: 400px;
-  height: 384px;
+  height: 100%;
+  min-height: 384px;
   margin: 0;
   flex-wrap: wrap;
+  padding-top: 103px;
 }
 
 .detail .advantage-item-text {
-  justify-content: flex-start;
+  justify-content: start;
   padding-top: 183px;
+}
+
+.real-town-description .advantage-item-text {
+  padding-top: 92px;
 }
 
 .advantage-item-text.light-blue {
@@ -344,10 +353,6 @@ slogan-image.sedona-grand-sucks {
   align-items: center;
 }
 
-.advantage-item-text.blue {
-  background-color: #82B3D3;
-}
-
 /*выстраивает первый пункт и подпункты друг под другом*/
 
 .advantage-item.real-town {
@@ -357,6 +362,8 @@ slogan-image.sedona-grand-sucks {
 .real-town-description {
   display: flex;
 }
+
+
 
 /*выстраивает первый пункт и подпункты друг под другом конец*/
 
@@ -528,13 +535,14 @@ slogan-image.sedona-grand-sucks {
 .subscribe {
   display: flex;
   flex-direction: column;
-  height: 411px;
+  min-height: 411px;
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
   text-align: center;
   align-items: center;
   border: 0;
+  background-size: cover;
 }
 
 .index-subscribe {
@@ -715,8 +723,12 @@ slogan-image.sedona-grand-sucks {
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
-  appearance: none;
   margin: 0;
+  appearance: none;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
 }
 
 /*рейндж слайдер конец*/
@@ -871,13 +883,13 @@ slogan-image.sedona-grand-sucks {
 
 .catalog-housing-requirements {
   background: url("../images/background/sedona-catalog-hotels.jpg") no-repeat #000000;
-  background-size: 100% auto;
   color: #FFFFFF;
   padding: 35px 70px 70px 70px;
-  width: 1200px;
-  height: 403px;
+  min-height: 403px;
   box-sizing: border-box;
   display: block;
+  background-size: cover;
+  width: 100%;
 }
 
 .housing-select {
@@ -1006,8 +1018,8 @@ slogan-image.sedona-grand-sucks {
 
 }
 
-.housing-item-checkboxs:hover ~ .housing-item-checkbox-mark,
-.housing-item-checkbox:focus ~ .housing-item-checkbox-mark {
+.housing-item-checkbox[type=checkbox]:hover ~ .housing-item-checkbox-mark,
+.housing-item-checkbox[type=checkbox]:focus ~ .housing-item-checkbox-mark {
   background-color: #FFFFFF99;
 
 }
@@ -1017,7 +1029,7 @@ slogan-image.sedona-grand-sucks {
 
 }
 
-.housing-item-checkbox:active ~ .housing-item-checkbox-mark {
+.housing-item-checkbox[type=checkbox]:active ~ .housing-item-checkbox-mark {
   background-color: #FFFFFF4D
 }
 
@@ -1038,6 +1050,12 @@ slogan-image.sedona-grand-sucks {
 
 .housing-item-checkbox[type="radio"] + .housing-item-checkbox-mark {
   border-radius: 50%;
+}
+
+.housing-item-checkbox[type="radio"]:hover ~ .housing-item-checkbox-mark,
+.housing-item-checkbox[type="radio"]:focus ~ .housing-item-checkbox-mark {
+  background-color: #ffffff;
+
 }
 
 .housing-item-checkbox[type="radio"]:checked + .housing-item-checkbox-mark::after {
@@ -1395,6 +1413,7 @@ html {
   background-color: #F2F2F2CC;
   font-family: inherit;
   z-index: 2;
+  align-items: center;
 }
 
 .modal-container-invisible {
@@ -1407,11 +1426,13 @@ html {
 /*модальное окно*/
 
 .modal {
-  margin: 396px auto auto auto;
+  margin: auto;
   box-sizing: border-box;
   background-color: #ffffff;
   border-radius: 30px;
   font-family: inherit;
+  position: fixed;
+  height: fit-content;
 }
 
 .modal-search {
@@ -1496,6 +1517,10 @@ html {
 .modal-input-box[type="number"]:hover,
 .modal-input-box[type="number"]:focus {
   appearance: none;
+}
+
+.modal-input-box[type='number'] {
+  -moz-appearance: textfield;
 }
 
 .modal-input-box[type="number"]::-webkit-outer-spin-button,
