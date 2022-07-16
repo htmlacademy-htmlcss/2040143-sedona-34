@@ -363,8 +363,6 @@ slogan-image.sedona-grand-sucks {
   display: flex;
 }
 
-
-
 /*выстраивает первый пункт и подпункты друг под другом конец*/
 
 /*конец преимущества седоны на главной*/
@@ -654,7 +652,8 @@ slogan-image.sedona-grand-sucks {
 
 .housing-filter-input .range-input {
   background-color: transparent;
-  width: 50px;
+  width: 100%;
+  height: 100%;
   border: 0;
   outline: none;
   padding: 0;
@@ -689,7 +688,7 @@ slogan-image.sedona-grand-sucks {
 }
 
 .housing-filter-input:focus {
-  box-shadow: inset 0 0 0 3px #81B3D2;
+  box-shadow: inset 0 0 0 3px #81B3D2, 0 0 0 3px #81B3D2;
 }
 
 .left-filter-input {
@@ -719,6 +718,13 @@ slogan-image.sedona-grand-sucks {
   border-right: 2px solid #FFFFFF;
   left: 14px;
 }
+
+.modal-input-box[type='number'],
+.modal-input-box[type="number"]:hover,
+.modal-input-box[type="number"]:focus {
+  appearance: none;
+}
+
 */
 
 .range-input::-webkit-outer-spin-button,
@@ -727,8 +733,26 @@ slogan-image.sedona-grand-sucks {
   appearance: none;
 }
 
-input[type='number'] {
+.range-input[type='number'],
+.range-input[type='number']:hover,
+.range-input[type='number']:focus {
+  appearance: none;
+}
+
+.range-input[type='number'] {
   -moz-appearance: textfield;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+input[type='number'] {
+  -moz-appearance: none;
 }
 
 /*рейндж слайдер конец*/
@@ -814,6 +838,7 @@ input[type='number'] {
   font-family: inherit;
   font-size: 18px;
   line-height: 21px;
+  background-color: #ffffff;
 }
 
 .housing-priority:hover,
@@ -993,6 +1018,14 @@ input[type='number'] {
 
 .breadcrumbs-link:hover .breadcrumbs-link-picture {
   fill: #FFFFFF99;
+}
+
+.breadcrumbs-link:active {
+  color: #FFFFFF4D;
+}
+
+.breadcrumbs-link:active .breadcrumbs-link-picture {
+  fill: #FFFFFF4D;
 }
 
 /*хлебные крошки конец*/
@@ -1263,6 +1296,7 @@ input[type='number'] {
   background-size: 12px 7px;
   background-repeat: no-repeat;
   background-position: 128px;
+  background-color: #ffffff;
 }
 
 /*пагинация и количество гостиниц на странице конец*/
@@ -1417,7 +1451,6 @@ html {
 .modal-container-invisible {
   display: none;
 }
-
 
 /*модальный контейнер конец*/
 
@@ -1622,7 +1655,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-
 }
 
 .visitors-adult.modal-input-box,
@@ -1659,7 +1691,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 
 /*модальное окно конец*/
-
 
 .button-plus {
   background: url(../images/other-elements/plus.svg);
