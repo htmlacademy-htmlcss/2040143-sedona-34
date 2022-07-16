@@ -403,7 +403,8 @@ slogan-image.sedona-grand-sucks {
 }
 
 .button-brown:disabled {
-  color: #E5E5E5;
+  color: #ffffff;
+  background-color: #E5E5E5;
 }
 
 .button-blue {
@@ -435,7 +436,8 @@ slogan-image.sedona-grand-sucks {
 }
 
 .button-blue:disabled {
-  color: #E5E5E5;
+  color: #ffffff;
+  background-color: #E5E5E5;
 }
 
 .searсh-hotel.button-brown {
@@ -449,8 +451,9 @@ slogan-image.sedona-grand-sucks {
   width: 160px;
   padding: 0;
   flex-wrap: wrap;
-  margin: auto 0 0 auto;
+  margin: 60px 0 0 auto;
   box-sizing: border-box;
+  height: 88px;
 }
 
 .apply-and-reset .button-blue {
@@ -1143,11 +1146,6 @@ input[type='number'] {
   padding: 8px 22px;
   box-sizing: border-box;
   grid-column: 2/3;
-}
-
-.hotel-link-about.button-brown {
-  width: 140px;
-  height: 37px;
 }
 
 .hotels-list {
