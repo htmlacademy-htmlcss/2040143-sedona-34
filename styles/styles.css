@@ -652,7 +652,8 @@ slogan-image.sedona-grand-sucks {
 
 .housing-filter-input .range-input {
   background-color: transparent;
-  width: 50px;
+  width: 100%;
+  height: 100%;
   border: 0;
   outline: none;
   padding: 0;
@@ -1451,7 +1452,6 @@ html {
   display: none;
 }
 
-
 /*модальный контейнер конец*/
 
 /*модальное окно*/
@@ -1655,7 +1655,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-
 }
 
 .visitors-adult.modal-input-box,
@@ -1692,7 +1691,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 
 /*модальное окно конец*/
-
 
 .button-plus {
   background: url(../images/other-elements/plus.svg);
